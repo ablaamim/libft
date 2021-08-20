@@ -2,9 +2,11 @@
 
 ## :book: LIBFT-42 :
 
+### Artistic view of LIBC:
+
 </p>
 <p align="center">
-<img src="https://www.asidesigned.com/images/programming-projects-img/project-libft.jpg" width="800">
+<img src="https://www.iamsterdam.com/media/locations-ndtrc/museums/rijksmuseum-library-cc-bynd-20-hans-splinter-via-flickr.jpg?w=977" width="800">
 </p>
 
 ---
