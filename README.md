@@ -1,6 +1,6 @@
 ---
 
-## LIBFT-42 :
+## :book: LIBFT-42 :
 
 </p>
 <p align="center">
