@@ -9,9 +9,7 @@
 
 </p>
 <p aign="center">
-<head>
-<title>ARTISTIC VIEW OF LIBC LIB!</title>
-</head>
+## ARTISTIC VIEW.
 <img src="https://www.iamsterdam.com/media/locations-ndtrc/museums/rijksmuseum-library-cc-bynd-20-hans-splinter-via-flickr.jpg?w=977" width="800">
 </p>
 
