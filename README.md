@@ -29,29 +29,51 @@ You must re-code the following functions. These function do not need any externa
 functions:
 
 • isalpha
+
 • isdigit
+
 • isalnum
+
 • isascii
+
 • isprint
+
 • strlen
+
 • memset
+
 • bzero
+
 • memcpy
+
 • memmove
+
 • strlcpy
+
 • strlcat
+
 • toupper
+
 • tolower
+
 • strchr
+
 • strrchr
+
 • strncmp
+
 • memchr
+
 • memcmp
+
 • strnstr
+
 • atoi
 
 You must also re-code the following functions, using the function “malloc”:
+
 • calloc
+
 • strdup
 
 ---
