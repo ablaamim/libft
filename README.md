@@ -9,12 +9,18 @@
 
 ---
 
-## ARTISTIC VIEW OF LIBC.
+## :performing_arts: ARTISTIC VIEW OF LIBC.
 
 </p>
 <p aign="center">
 <img src="https://www.iamsterdam.com/media/locations-ndtrc/museums/rijksmuseum-library-cc-bynd-20-hans-splinter-via-flickr.jpg?w=977" width="800">
 </p>
+
+---
+
+## SUBJECT :
+
+[PDF]()
 
 ---
 
