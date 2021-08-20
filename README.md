@@ -9,18 +9,18 @@
 
 ---
 
-## :performing_arts: ARTISTIC VIEW OF LIBC.
+## :performing_arts: HOW DOES IT FEEL HAVING YOUR OWN LIB:
 
 </p>
 <p aign="center">
-<img src="https://www.iamsterdam.com/media/locations-ndtrc/museums/rijksmuseum-library-cc-bynd-20-hans-splinter-via-flickr.jpg?w=977" width="800">
+<img src="http://2.bp.blogspot.com/-bBJeRPdPd9M/UfYBsNF2ffI/AAAAAAAADnk/_qqet8O6rvo/s1600/library%2Bcard2.gif" width="800">
 </p>
 
 ---
 
 ## SUBJECT :
 
-[PDF ENG](https://github.com/alaamimi/LIBFT-42/blob/main/en.subject.pdf)
+[ENGLISH PDF](https://github.com/alaamimi/LIBFT-42/blob/main/en.subject.pdf)
 
 ---
 
