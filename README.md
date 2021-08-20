@@ -1,2 +1,34 @@
-# LIBFT-42
-An open source standard C library that includes useful functions &amp;&amp; (Reimplementation of libc functions + own functions).
+---
+
+## LIBFT-42 :
+
+</p>
+<p align="center">
+<img src="" width="800">
+</p>
+
+---
+
+## What is LIBFT :
+
+> TO FILL.
+
+---
+
+## Mandatory part :
+
+> TO FILL.
+
+---
+
+## ADDITIONAL FUNCTIONS :
+
+> TO FILL.
+
+---
+
+## BONUS :
+
+> TO FILL.
+
+---
