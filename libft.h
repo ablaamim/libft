@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/23 01:22:37 by alaamimi          #+#    #+#             */
-/*   Updated: 2021/08/23 01:31:00 by alaamimi         ###   ########.fr       */
+/*   Created: 2021/09/16 06:58:52 by alaamimi          #+#    #+#             */
+/*   Updated: 2021/09/16 07:01:45 by alaamimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+int	is_alnum(int c);
 
-size_t	ft_strlen(char const *s)
-{
-	size_t	i;
+int	is_alpha(int c);
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
+int	is_ascii(int c);
+
+int	is_digit(int c);
+
+int	is_print(int c);
+
+size_t	ft_strlen(char const *s);
