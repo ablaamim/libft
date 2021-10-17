@@ -4,7 +4,7 @@
 
 </p>
 <p align="center">
-<img src="https://github.com/ablaamim/LIBFT-42/blob/main/ressources/libftm.png" width="200">
+<img src="https://github.com/ablaamim/LIBFT-42/blob/main/ressources/libftm.png" width="150">
 </p>
 
 
