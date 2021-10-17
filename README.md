@@ -48,29 +48,53 @@ Part 1
 > <i>In this first part, you must re-code a set of the libc functions, as defined in their man. Your functions will need to present the same prototype and behaviors as the originals. Your functions’ names must be prefixed by “ft_”. For instance strlen becomes ft_strlen.</i>
 
 <p align=center>
+
 • isalpha
+
 • isdigit
+
 • isalnum
+
 • isascii
+
 • isprint
+
 • strlen
+
 • memset
+
 • bzero
+
 • memcpy
+
 • memmove
+
 • strlcpy
+
 • strlcat
+
 • toupper
+
 • tolower
+
 • strchr
+
 • strrchr
+
 • strncmp
+
 • memchr
+
 • memcmp
+
 • strnstr
+
 • atoi
+
 • calloc
+
 • strdup
+
 </p>
 
 You must also re-code the following functions, using the function “malloc”:
@@ -90,17 +114,29 @@ Part 2
 > <i>In this second part, you must code a set of functions that are either not included in the libc, or included in a different form. Some of these functions can be useful to write Part 1’s functions.</i>
 
 <p align=center>
+
 • substr
+
 • strjoin
+
 • strtrim
+
 • split
+
 • itoa
+
 • strmapi
+
 • striteri
+
 • putchar_fd
+
 • putstr_fd
+
 • putendl_fd
+
 • putnbr_fd
+
 </p>
 
 ---
@@ -113,15 +149,25 @@ Bonus
 
 > <i>The following functions will allow you to easily use your lists.</i>
 <p align=center>
+
 • lstnew
+
 • lstadd_front
+
 • lstsize
+
 • lstlast
+
 • lstadd_back
+
 • lstdelone
+
 • lstclear
+
 • lstiter
+
 • lstmap
+
 </p>
 
 ---
