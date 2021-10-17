@@ -144,7 +144,6 @@ Part 2
 ## :wrench: BONUS :
 
 <h3 align=center>
-<More XP and blackhole!>
 </h3>
 
 > <i>The following functions will allow you to easily use your lists.</i>
