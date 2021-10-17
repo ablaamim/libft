@@ -2,13 +2,18 @@
 
 ## :book: LIBFT-42 :
 
+---
+
 </p>
 <p align="center">
 <img src="https://github.com/ablaamim/LIBFT-42/blob/main/ressources/libftm.png" width="150">
 </p>
 
+---
 
 ## Artistic view of LIBC:
+
+---
 
 </p>
 <p align="center">
@@ -19,6 +24,8 @@
 
 ## :performing_arts: HOW DOES IT FEEL HAVING YOUR OWN LIB:
 
+---
+
 </p>
 <p aign="center">
 <img src="http://2.bp.blogspot.com/-bBJeRPdPd9M/UfYBsNF2ffI/AAAAAAAADnk/_qqet8O6rvo/s1600/library%2Bcard2.gif" width="800">
@@ -28,11 +35,15 @@
 
 ## SUBJECT :
 
+---
+
 [ENGLISH PDF](https://github.com/alaamimi/LIBFT-42/blob/main/en.subject.pdf)
 
 ---
 
 ## :information_source: What is LIBFT :
+
+---
 
 This project aims to code a C library regrouping usual functions that you’ll
 be allowed to use in all your other projects
@@ -40,6 +51,8 @@ be allowed to use in all your other projects
 ---
 
 ## :wrench: MANDATORY :
+
+---
 
 <h3 align=center>
 Part 1
@@ -103,6 +116,8 @@ You must also re-code the following functions, using the function “malloc”:
 
 ## :wrench: ADDITIONAL FUNCTIONS :
 
+---
+
 <h3 align=center>
 Part 2
 </h3>
@@ -139,6 +154,8 @@ Part 2
 
 ## :wrench: BONUS :
 
+---
+
 <h3 align=center>
 </h3>
 
@@ -169,11 +186,15 @@ Part 2
 
 ### Header file
 
+---
+
 - [`libft.h`]	- contains all prototypes of functions and structures
 
 ---
 
 ### Functions from `<ctype.h>`
+
+---
 
 - [`ft_isalpha`]	- checks  for  an  alphabetic  character
 - [`ft_isdigit`]	- checks for a digit (0 through 9).
@@ -186,6 +207,8 @@ Part 2
 ---
 
 ### Functions from `<string.h>`
+
+---
 
 - [`ft_memset`]	- fill memory with a constant byte
 - [`ft_strlen`]	- calculate the length of a string
@@ -206,12 +229,16 @@ Part 2
 
 ### Functions from `<stdlib.h>`
 
+---
+
 - [`ft_atoi`]	- convert a string to an integer
 - [`ft_calloc`]	- allocate memory by filling it with zeros
 
 ---
 
 ### Non-standard functions
+
+---
 
 - [`ft_substr`]	- returns a substring from a string
 - [`ft_strjoin`]	- concatenates two strings
@@ -228,6 +255,8 @@ Part 2
 ---
 
 ### Linked list functions
+
+---
 
 - [`ft_lstnew`]	- creates a new list element
 - [`ft_lstadd_front`]	- adds an element at the beginning of a list
