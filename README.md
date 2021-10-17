@@ -91,10 +91,6 @@ Part 1
 
 • atoi
 
-• calloc
-
-• strdup
-
 </p>
 
 You must also re-code the following functions, using the function “malloc”:
@@ -175,6 +171,8 @@ Part 2
 
 - [`libft.h`]	- contains all prototypes of functions and structures
 
+---
+
 ### Functions from `<ctype.h>`
 
 - [`ft_isalpha`]	- checks  for  an  alphabetic  character
@@ -184,6 +182,8 @@ Part 2
 - [`ft_isprint`]	- checks for any printable character
 - [`ft_toupper`]	- convert char to uppercase
 - [`ft_tolower`]	- convert char to lowercase
+
+---
 
 ### Functions from `<string.h>`
 
@@ -202,11 +202,17 @@ Part 2
 - [`ft_strnstr`]	- locate a substring in a string
 - [`ft_strdup`]	- duplicate a string.
 
+---
+
 ### Functions from `<stdlib.h>`
+
 - [`ft_atoi`]	- convert a string to an integer
 - [`ft_calloc`]	- allocate memory by filling it with zeros
 
+---
+
 ### Non-standard functions
+
 - [`ft_substr`]	- returns a substring from a string
 - [`ft_strjoin`]	- concatenates two strings
 - [`ft_strtrim`]	- trims the beginning and end of string with specific set of chars
@@ -218,6 +224,8 @@ Part 2
 - [`ft_putstr_fd`]	- output a string to a file descriptor
 - [`ft_putendl_fd`]	- output a string to a file descriptor, followed by a new line
 - [`ft_putnbr_fd`]	- output a number to a file descriptor
+
+---
 
 ### Linked list functions
 
