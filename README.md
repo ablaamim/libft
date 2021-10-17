@@ -8,7 +8,7 @@
 </p>
 
 
-### Artistic view of LIBC:
+## Artistic view of LIBC:
 
 </p>
 <p align="center">
