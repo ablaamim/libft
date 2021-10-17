@@ -186,7 +186,3 @@ Bonus
 - [`ft_lstmap`](ft_lstmap.c)	- applies a function to each element of a list
 
 ---
-<h2>
-Usage
-</h2>
-
