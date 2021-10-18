@@ -144,7 +144,7 @@ Part 2
 
 ---
 
-## :wrench: :shipit: BONUS :
+## :wrench: :white_check_mark: BONUS :
 
 ---
 
