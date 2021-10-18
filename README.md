@@ -63,7 +63,7 @@ Part 1
 </h3>
 
 </p>
-<p aign="center">
+<p align="center">
 <img src="https://media3.giphy.com/media/PiQejEf31116URju4V/giphy.gif?cid=790b76118ba41a4e1b4161c3938a263d41c72d85f85788ca&amp;rid=giphy.gif&amp;ct=g" width="500">
 </p>
 
@@ -127,7 +127,7 @@ Part 2
 </h3>
 
 </p>
-<p aign="center">
+<p align="center">
 <img src="https://c.tenor.com/uYqsM9uIyuYAAAAS/simple-easy.gif" width="500">
 </p>
 
