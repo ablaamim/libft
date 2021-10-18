@@ -11,7 +11,7 @@
 
 ---
 
-### :coffee: Artistic view of LIBFT :
+### :coffee: Artistic view of your LIBFT :
 
 ---
 
@@ -41,7 +41,7 @@
 
 ---
 
-### :information_source: What is LIBFT :
+### :information_source: What exactly is LIBFT ?
 
 ---
 
@@ -56,7 +56,7 @@
 
 ---
 
-### :wrench: :wrench: Mandatory :
+### :wrench: :wrench: Mandatory parts [part 1] [part 2] :
 
 ---
 
