@@ -22,7 +22,7 @@
 
 ---
 
-### :performing_arts: HOW DOES IT FEEL HAVING YOUR OWN LIB:
+### :performing_arts: HOW DOES IT FEEL ?
 
 ---
 
