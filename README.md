@@ -56,12 +56,12 @@
 
 ---
 
-### :wrench: :wrench: Mandatory parts [part 1] [part 2] :
+### :wrench: :wrench: Mandatory parts [part I] [part II] :
 
 ---
 
 <h3 align=center>
-Part 1
+Part I :
 </h3>
 
 ---
@@ -144,7 +144,7 @@ Part 1
 ---
 
 <h3 align=center>
-Part 2
+Part II :
 </h3>
 
 ---
