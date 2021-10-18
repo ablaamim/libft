@@ -64,9 +64,9 @@ Part 1
 
 | %  | FUNCTIONS| Allowed functions | Prototype |
 |--- |---		|---                |---        |
-|	 | [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c)  | NONE				| int	ft_isalpha(int c) |
-|	 | [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c)  | NONE				| int	ft_isdigit(inc c) |
-|	 | [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c)  | NONE				| int	ft_isalnum(int c) |
+|	 | [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c)  | NONE				| int	ft_isalpha (int	c) |
+|	 | [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c)  | NONE				| int	ft_isdigit (int	c) |
+|	 | [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c)  | NONE				| int	ft_isalnum (int	c) |
 |    | isascii()  | NONE				|
 |    | isprint()  | NONE				|
 |    | strlen()   | NONE				|
