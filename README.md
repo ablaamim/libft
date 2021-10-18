@@ -81,33 +81,33 @@ Part I :
 
 | # | Assignement name | Description |
 |---|---               |---          |
-|   | [libft.h](https://github.com/ablaamim/libft/blob/main/libft.h) |  contains all prototypes of functions and structures |
+|   | [libft.h](https://github.com/ablaamim/libft/blob/main/libft.h) |  Contains all prototypes of functions and structures. |
 
 ---
 
 | FUNCTION      | Allowed functions | Prototype | Description | Library |
 |---		|---                |---        |---          |---      |
-| [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | NONE	   | int	ft_isalpha (int	c) | checks for an alphabetic character. | <ctype.h> |
-| [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | NONE	   | int	ft_isdigit (int	c) | checks for a digit (0 through 9). | <ctype.h> |
-| [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | NONE	   | int	ft_isalnum (int	c) | checks for an alphanumeric character. | <ctype.h> |
-| [isascii()]()  | NONE	  |
-| [isprint()]()  | NONE	  |
-| [strlen()]()   | NONE	  |
-| [memset()]()   | NONE   |
-| [bzero()]()    | NONE	  |
-| [memcpy()]()   | NONE	  |
-| [memmove()]()  | NONE	  |
-| [strlcpy()]()  | NONE	  |
-| [strlcat()]()  | NONE	  |
-| [toupper()]()  | NONE	  |
-| [tolower()]()  | NONE	  |
-| [strchr()]()   | NONE   |
-| [strrchr()]()  | NONE	  |
-| [strncmp()]()  | NONE	  |
-| [memchr()]()   | NONE	  |
-| [memcmp()]()   | NONE	  |
-| [strnstr()]()  | NONE	  |
-| [atoi()]()     | NONE	  |
+| • [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | NONE	   | int	ft_isalpha (int	c) | Checks for an alphabetic character. | <ctype.h> |
+| • [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | NONE	   | int	ft_isdigit (int	c) | Checks for a digit (0 through 9). | <ctype.h> |
+| • [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | NONE	   | int	ft_isalnum (int	c) | Checks for an alphanumeric character. | <ctype.h> |
+| • [isascii()]()  | NONE	  |
+| • [isprint()]()  | NONE	  |
+| • [strlen()]()   | NONE	  |
+| • [memset()]()   | NONE   |
+| • [bzero()]()    | NONE	  |
+| • [memcpy()]()   | NONE	  |
+| • [memmove()]()  | NONE	  |
+| • [strlcpy()]()  | NONE	  |
+| • [strlcat()]()  | NONE	  |
+| • [toupper()]()  | NONE	  |
+| • [tolower()]()  | NONE	  |
+| • [strchr()]()   | NONE   |
+| • [strrchr()]()  | NONE	  |
+| • [strncmp()]()  | NONE	  |
+| • [memchr()]()   | NONE	  |
+| • [memcmp()]()   | NONE	  |
+| • [strnstr()]()  | NONE	  |
+| • [atoi()]()     | NONE	  |
 
 ---
 
@@ -122,9 +122,9 @@ Part I :
 
 | #  | FUNCTION    | MANUAL |
 |--- |---	   |---     |
-|    | [isalpha](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)  |
-|    | [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
-|    | [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
+|    | • [isalpha](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)  |
+|    | • [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
+|    | • [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
 
 ---
 
@@ -132,14 +132,14 @@ Part I :
 
 > You must also re-code the following functions, using the function “malloc”:
 
-| #  |  FUNCTIONS  | ALLOWED FUNCTIONS |
-|--- |---          |---                |
-|    |  calloc()   |  malloc()         |
-|    |  strdup()   |  malloc()         |
+| #  |  Function   | Allowed function  | Prototype | Description | Manual |
+|--- |---          |---                |---	   |       |      |
+|    | • calloc()   |  malloc()         |           |       |      |
+|    | • strdup()   |  malloc()         |	   |       |      |
 
 ---
 
-### :wrench: :factory: ADDITIONAL FUNCTIONS :
+### :wrench: :factory: Additional functions :
 
 ---
 
