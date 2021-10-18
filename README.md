@@ -50,6 +50,8 @@
 <img src="https://github.com/ablaamim/libft/blob/main/ressources/Libft.png" width="500">
 </p>
 
+---
+
 >This project aims to code a C library regrouping usual functions that you’ll be allowed to use in all your other projects.
 
 ---
@@ -62,18 +64,18 @@
 Part 1
 </h3>
 
+---
+
 </p>
 <p align="center">
 <img src="https://media3.giphy.com/media/PiQejEf31116URju4V/giphy.gif?cid=790b76118ba41a4e1b4161c3938a263d41c72d85f85788ca&amp;rid=giphy.gif&amp;ct=g" width="500">
 </p>
 
+---
+
 > <i>In this first part, you must re-code a set of the libc functions, as defined in their man. Your functions will need to present the same prototype and behaviors as the originals. Your functions’ names must be prefixed by “ft_”. For instance strlen becomes ft_strlen.</i>
 
 <p align=center>
-
----
-
-## Header file :
 
 ---
 
@@ -107,16 +109,22 @@ Part 1
 | [strnstr()]()  | NONE	  |
 | [atoi()]()     | NONE	  |
 
+---
+
 </p>
 <p align="center">
 <img src="https://postcoitum429456745.files.wordpress.com/2018/10/mao_rtfm_vectorize_by_cmenghi.png" width="500">
 </p>
+
+---
 
 | #| FUNCTION | MANUAL |
 |--- |---	   |---     |
 | | [isalpha](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)  |
 | | [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c)  | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
 | | [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c)  | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
+
+---
 
 </p>
 
@@ -137,10 +145,14 @@ Part 1
 Part 2
 </h3>
 
+---
+
 </p>
 <p align="center">
 <img src="https://c.tenor.com/uYqsM9uIyuYAAAAS/simple-easy.gif" width="500">
 </p>
+
+---
 
 
 > <i>In this second part, you must code a set of functions that are either not included in the libc, or included in a different form. Some of these functions can be useful to write Part 1’s functions.</i>
