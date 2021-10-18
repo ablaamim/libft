@@ -27,7 +27,7 @@
 ---
 
 </p>
-<p aign="center">
+<p align="center">
 <img src="http://2.bp.blogspot.com/-bBJeRPdPd9M/UfYBsNF2ffI/AAAAAAAADnk/_qqet8O6rvo/s1600/library%2Bcard2.gif" width="500">
 </p>
 
