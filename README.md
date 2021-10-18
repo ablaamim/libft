@@ -116,6 +116,8 @@ Part 1
 <img src="https://postcoitum429456745.files.wordpress.com/2018/10/mao_rtfm_vectorize_by_cmenghi.png" width="500">
 </p>
 
+
+> The legend says : "READ THE FUCKING MANUAL." X) !
 ---
 
 | #| FUNCTION | MANUAL |
