@@ -62,37 +62,38 @@ Part 1
 
 <p align=center>
 
-| %  | FUNCTION |
-|--- |---		|
-|	 | isalpha  |
-|	 | isdigit  |
-|	 | isalnum  |
-|    | isascii  |
-|    | isprint  |
-|    | strlen   |
-|    | memset	|
-|    | bzero	|
-|    | memcpy	|
-|	 | memmove  |
-|	 | strlcpy  |
-|	 | strlcat  |
-|	 | toupper  |
-|	 | tolower  |
-|	 | strchr   |
-|	 | strrchr  |
-|	 | strncmp  |
-|	 | memchr   |
-|	 | memcmp   |
-|	 | strnstr  |
-|	 | atoi     |
+| %  | FUNCTIONS| Allowed functions |
+|--- |---		|---                |
+|	 | isalpha()  | NONE				|
+|	 | isdigit()  | NONE				|
+|	 | isalnum()  | NONE				|
+|    | isascii()  | NONE				|
+|    | isprint()  | NONE				|
+|    | strlen()   | NONE				|
+|    | memset() | NONE				|
+|    | bzero()  | NONE				|
+|    | memcpy() | NONE				|
+|	 | memmove()  | NONE				|
+|	 | strlcpy()  | NONE				|
+|	 | strlcat()  | NONE				|
+|	 | toupper()  | NONE				|
+|	 | tolower()  | NONE				|
+|	 | strchr()   | NONE				|
+|	 | strrchr()  | NONE				|
+|	 | strncmp()  | NONE				|
+|	 | memchr()   | NONE				|
+|	 | memcmp()   | NONE				|
+|	 | strnstr()  | NONE				|
+|	 | atoi()     | NONE				|
 
 </p>
 
-You must also re-code the following functions, using the function “malloc”:
+> You must also re-code the following functions, using the function “malloc”:
 
-• calloc
-
-• strdup
+| % |  FUNCTIONS | ALLOWED FUNCTIONS |
+|--- |---        |---                |
+|    |  calloc()   |   malloc()      |
+|    |  strdup()   |  malloc()       |
 
 ---
 
