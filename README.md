@@ -62,47 +62,29 @@ Part 1
 
 <p align=center>
 
-• isalpha
-
-• isdigit
-
-• isalnum
-
-• isascii
-
-• isprint
-
-• strlen
-
-• memset
-
-• bzero
-
-• memcpy
-
-• memmove
-
-• strlcpy
-
-• strlcat
-
-• toupper
-
-• tolower
-
-• strchr
-
-• strrchr
-
-• strncmp
-
-• memchr
-
-• memcmp
-
-• strnstr
-
-• atoi
+| %  | FUNCTION |
+|--- |---		|
+|	 | isalpha  |
+|	 | isdigit  |
+|	 | isalnum  |
+|    | isascii  |
+|    | isprint  |
+|    | strlen   |
+|    | memset	|
+|    | bzero	|
+|    | memcpy	|
+|	 | memmove  |
+|	 | strlcpy  |
+|	 | strlcat  |
+|	 | toupper  |
+|	 | tolower  |
+|	 | strchr   |
+|	 | strrchr  |
+|	 | strncmp  |
+|	 | memchr   |
+|	 | memcmp   |
+|	 | strnstr  |
+|	 | atoi     |
 
 </p>
 
