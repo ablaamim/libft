@@ -79,7 +79,7 @@ Part 1
 
 | # | Assignement name | Description |
 |---|--- |--- |
-| - [`libft.h`] | - contains all prototypes of functions and structures |
+|   | [libft.h](https://github.com/ablaamim/libft/blob/main/libft.h) |  contains all prototypes of functions and structures |
 
 ---
 
