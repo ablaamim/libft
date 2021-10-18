@@ -62,11 +62,11 @@ Part 1
 
 <p align=center>
 
-| %  | FUNCTIONS| Allowed functions |
-|--- |---		|---                |
-|	 | isalpha()  | NONE				|
-|	 | isdigit()  | NONE				|
-|	 | isalnum()  | NONE				|
+| %  | FUNCTIONS| Allowed functions | Prototype |
+|--- |---		|---                |---        |
+|	 | isalpha()  | NONE				| int	ft_isalpha(int c) |
+|	 | isdigit()  | NONE				| int	ft_isdigit(inc c) |
+|	 | isalnum()  | NONE				| int	ft_isalnum(int c) |
 |    | isascii()  | NONE				|
 |    | isprint()  | NONE				|
 |    | strlen()   | NONE				|
