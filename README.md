@@ -45,8 +45,12 @@
 
 ---
 
-This project aims to code a C library regrouping usual functions that you’ll
-be allowed to use in all your other projects.
+</p>
+<p align="center">
+<img src="https://github.com/ablaamim/libft/blob/main/ressources/Libft.png" width="500">
+</p>
+
+>This project aims to code a C library regrouping usual functions that you’ll be allowed to use in all your other projects.
 
 ---
 
@@ -57,6 +61,11 @@ be allowed to use in all your other projects.
 <h3 align=center>
 Part 1
 </h3>
+
+</p>
+<p aign="center">
+<img src="https://media3.giphy.com/media/PiQejEf31116URju4V/giphy.gif?cid=790b76118ba41a4e1b4161c3938a263d41c72d85f85788ca&amp;rid=giphy.gif&amp;ct=g" width="800">
+</p>
 
 > <i>In this first part, you must re-code a set of the libc functions, as defined in their man. Your functions will need to present the same prototype and behaviors as the originals. Your functions’ names must be prefixed by “ft_”. For instance strlen becomes ft_strlen.</i>
 
