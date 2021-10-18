@@ -112,11 +112,11 @@ Part 1
 <img src="https://postcoitum429456745.files.wordpress.com/2018/10/mao_rtfm_vectorize_by_cmenghi.png" width="500">
 </p>
 
-| FUNCTION | MANUAL |
-|---	   |---     |
-| [isaslpha]() | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)  |
-| [isdigit]()  | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
-| [isalnum]()  | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
+| #| FUNCTION | MANUAL |
+|--- |---	   |---     |
+|--- |--- [isalpha](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)  |
+|--- |--- [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c)  | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
+|--- |--- [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c)  | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
 
 </p>
 
