@@ -46,7 +46,7 @@
 ---
 
 This project aims to code a C library regrouping usual functions that you’ll
-be allowed to use in all your other projects
+be allowed to use in all your other projects.
 
 ---
 
@@ -184,7 +184,7 @@ Part 2
 
 ---
 
-### Header file
+### Header file :
 
 ---
 
@@ -192,7 +192,7 @@ Part 2
 
 ---
 
-### Functions from `<ctype.h>`
+### Functions from `<ctype.h>` :
 
 ---
 
@@ -206,7 +206,7 @@ Part 2
 
 ---
 
-### Functions from `<string.h>`
+### Functions from `<string.h>` :
 
 ---
 
@@ -227,7 +227,7 @@ Part 2
 
 ---
 
-### Functions from `<stdlib.h>`
+### Functions from `<stdlib.h>` :
 
 ---
 
@@ -236,7 +236,7 @@ Part 2
 
 ---
 
-### Non-standard functions
+### Non-standard functions :
 
 ---
 
@@ -254,7 +254,7 @@ Part 2
 
 ---
 
-### Linked list functions
+### Linked list functions :
 
 ---
 
