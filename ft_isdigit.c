@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 09:25:47 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/18 09:40:16 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/18 11:13:00 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,5 @@ int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (FT_SUCCESS);
-	else
-		return (FT_FAILURE);
+	return (FT_FAILURE);
 }
