@@ -1,6 +1,6 @@
 ---
 
-## :book: LIBFT-42 :
+### :book: LIBFT-42 :
 
 ---
 
@@ -11,7 +11,7 @@
 
 ---
 
-## :coffee: Artistic view of LIBFT :
+### :coffee: Artistic view of LIBFT :
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-## :performing_arts: HOW DOES IT FEEL HAVING YOUR OWN LIB:
+### :performing_arts: HOW DOES IT FEEL HAVING YOUR OWN LIB:
 
 ---
 
@@ -33,7 +33,7 @@
 
 ---
 
-## SUBJECT :
+### Subject :
 
 ---
 
@@ -41,7 +41,7 @@
 
 ---
 
-## :information_source: What is LIBFT :
+### :information_source: What is LIBFT :
 
 ---
 
@@ -56,7 +56,7 @@
 
 ---
 
-## :wrench: MANDATORY :
+### :wrench: Mandatory :
 
 ---
 
@@ -137,7 +137,7 @@ Part 1
 
 ---
 
-## :wrench: :factory: ADDITIONAL FUNCTIONS :
+### :wrench: :factory: ADDITIONAL FUNCTIONS :
 
 ---
 
@@ -185,7 +185,7 @@ Part 2
 
 ---
 
-## :wrench: :white_check_mark: BONUS :
+### :wrench: :white_check_mark: BONUS :
 
 ---
 
