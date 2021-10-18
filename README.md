@@ -83,29 +83,29 @@ Part 1
 
 ---
 
-| # | FUNCTIONS| Allowed functions | Prototype | Description | Library |
-|--- |---		|---                |---        |--- |--- |
-|	 | [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c)  | NONE				| int	ft_isalpha (int	c) | checks for an alphabetic character | <ctype.h> |
-|	 | [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c)  | NONE				| int	ft_isdigit (int	c) | checks for a digit (0 through 9). | <ctype.h> |
-|	 | [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c)  | NONE				| int	ft_isalnum (int	c) | checks for an alphanumeric character | <ctype.h> |
-|    | [isascii()]()  | NONE				|
-|    | [isprint()]()  | NONE				|
-|    | [strlen()]()  | NONE				|
-|    | [memset()]() |  NONE				|
-|    | [bzero()]()  | NONE				|
-|    | [memcpy()]() | NONE				|
-|	 | [memmove()]()  | NONE				|
-|	 | [strlcpy()]()  | NONE				|
-|	 | [strlcat()]()  | NONE				|
-|	 | [toupper()]()  | NONE				|
-|	 | [tolower()]()  | NONE				|
-|	 | [strchr()]()   | NONE				|
-|	 | [strrchr()]()  | NONE				|
-|	 | [strncmp()]()  | NONE				|
-|	 | [memchr()]()   | NONE				|
-|	 | [memcmp()]()   | NONE				|
-|	 | [strnstr()]()  | NONE				|
-|	 | [atoi()]()     | NONE				|
+| FUNCTIONS| Allowed functions | Prototype | Description | Library |
+|---		|---                |---        |--- |--- |
+| [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c)  | NONE	   | int	ft_isalpha (int	c) | checks for an alphabetic character | <ctype.h> |
+| [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c)  | NONE	   | int	ft_isdigit (int	c) | checks for a digit (0 through 9). | <ctype.h> |
+| [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c)  | NONE	   | int	ft_isalnum (int	c) | checks for an alphanumeric character | <ctype.h> |
+| [isascii()]()  | NONE	  |
+| [isprint()]()  | NONE	  |
+| [strlen()]()   | NONE	  |
+| [memset()]()   | NONE   |
+| [bzero()]()    | NONE	  |
+| [memcpy()]()   | NONE	  |
+| [memmove()]()  | NONE	  |
+| [strlcpy()]()  | NONE	  |
+| [strlcat()]()  | NONE	  |
+| [toupper()]()  | NONE	  |
+| [tolower()]()  | NONE	  |
+| [strchr()]()   | NONE   |
+| [strrchr()]()  | NONE	  |
+| [strncmp()]()  | NONE	  |
+| [memchr()]()   | NONE	  |
+| [memcmp()]()   | NONE	  |
+| [strnstr()]()  | NONE	  |
+| [atoi()]()     | NONE	  |
 
 </p>
 
