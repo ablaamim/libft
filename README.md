@@ -11,7 +11,7 @@
 
 ---
 
-## Artistic view of LIBC:
+## :coffee: Artistic view of LIBFT :
 
 ---
 
@@ -37,7 +37,7 @@
 
 ---
 
-[ENGLISH PDF](https://github.com/alaamimi/LIBFT-42/blob/main/en.subject.pdf)
+:book: [ENGLISH PDF](https://github.com/alaamimi/LIBFT-42/blob/main/en.subject.pdf)
 
 ---
 
@@ -106,7 +106,7 @@ Part 1
 
 ---
 
-## :wrench: ADDITIONAL FUNCTIONS :
+## :wrench: :factory: ADDITIONAL FUNCTIONS :
 
 ---
 
@@ -144,7 +144,7 @@ Part 2
 
 ---
 
-## :wrench: BONUS :
+## :wrench: :shipit: BONUS :
 
 ---
 
