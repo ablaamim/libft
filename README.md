@@ -133,7 +133,7 @@ Part I :
 > You must also re-code the following functions, using the function “malloc”:
 
 | #  |  Function   | Allowed function  | Prototype | Description | Manual |
-|--- |---          |---                |---	   |       |      |
+|--- |---          |---                |---	   |---       |---      |
 |    | • calloc()   |  malloc()         |           |       |      |
 |    | • strdup()   |  malloc()         |	   |       |      |
 
