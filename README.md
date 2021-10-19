@@ -92,8 +92,8 @@ Part I :
 | • [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | NONE	   | int	ft_isalnum (int	c) | Checks for an alphanumeric character. | <ctype.h> |
 | • [isascii()](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | NONE	   | int	ft_isascii (int c) | Checks whether c fits into the ASCII character set. | <ctype.h> |
 | • [isprint()](https://github.com/ablaamim/libft/blob/main/ft_isprint.c) | NONE	   | int	ft_isprint (int c) | Checks for any printable character. | <ctype.h> |
-| • [strlen()]()   | NONE	  |
-| • [memset()]()   | NONE   |
+| • [strlen()](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | NONE	   | size_t strlen(const char *s)  | Calculate the length of a string. | <string.h> | 
+| • [memset()]()   | NONE   	  |
 | • [bzero()]()    | NONE	  |
 | • [memcpy()]()   | NONE	  |
 | • [memmove()]()  | NONE	  |
@@ -125,7 +125,8 @@ Part I :
 |     | • [isalpha](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)  |
 |     | • [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
 |     | • [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
-|     | • [isascii](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | [mac](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value) |
+|     | • [isascii](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | [man](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value) |
+|     | • [strlen](https://github.com/ablaamim/libft/blob/main/ft_strlen.c) | [man](http://manpagesfr.free.fr/man/man3/strlen.3.html) |
 
 ---
 
