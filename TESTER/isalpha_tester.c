@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 18:28:14 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 12:19:11 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/19 13:32:54 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(int argc, char *argv[])
 	while (index < 16)
 	{
 		if (ft_isalpha(test[index]) == 0)
-			printf("%s%s%s", RED, "[KO] ---> YOUR IS ALPHA DOES NOT WORK FOR ALPHA CHARACTERS.\n", DEFAULT);
+			printf("%s%s%s", RED, "[KO] ---> YOUR ISALPHA DOES NOT WORK FOR ALPHA CHARACTERS.\n", DEFAULT);
 		else
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
@@ -39,7 +39,7 @@ int	main(int argc, char *argv[])
 	while (index < 10)
 	{
 		if (ft_isalpha(test1[index]) == 1)
-			printf("%s%s%s", RED, "[KO] ---> YOUR IS ALPHA DOES NOT WORK FOR NUMERICS.\n", DEFAULT);
+			printf("%s%s%s", RED, "[KO] ---> YOUR ISALPHA DOES NOT WORK FOR NUMERICS.\n", DEFAULT);
 		else
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
@@ -53,7 +53,7 @@ int	main(int argc, char *argv[])
 			if (test2[index] == 0)
 				printf("%s%s%s", RED, "[KO] ---> YOUR ISALPHA DOES NOT WORK FOR '\\0'.\n", DEFAULT);
 			else if (test2[index] < 32 || test2[index] == 127)
-				printf("%s%s%s", RED, "[KO] ---> YOUR IS ALPHA DOES NOT WORK FOR NON PRINTABLE CHARACTERS.\n", DEFAULT);
+				printf("%s%s%s", RED, "[KO] ---> YOUR ISALPHA DOES NOT WORK FOR NON PRINTABLE CHARACTERS.\n", DEFAULT);
 		}
 		else
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);

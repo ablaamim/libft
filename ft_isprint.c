@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 12:51:21 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 12:54:40 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/19 13:25:49 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c < 127)
+	if (c >= ' ' && c <= '~')
 		return (FT_SUCCESS);
 	return (FT_FAILURE);
 }

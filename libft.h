@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 16:38:14 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 12:33:56 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/19 13:16:52 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_isascii(int c);
+int	ft_isprint(int c);
 
 #endif
