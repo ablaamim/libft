@@ -93,7 +93,7 @@ Part I :
 | • [isascii()](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | NONE	   | int	ft_isascii (int c) | Checks whether c fits into the ASCII character set. | <ctype.h> |
 | • [isprint()](https://github.com/ablaamim/libft/blob/main/ft_isprint.c) | NONE	   | int	ft_isprint (int c) | Checks for any printable character. | <ctype.h> |
 | • [strlen()](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | NONE	   | size_t strlen(const char *s)  | Calculate the length of a string. | <string.h> | 
-| • [memset()]()   | NONE   	  |
+| • [memset()](https://github.com/ablaamim/libft/blob/main/ft_memset.c)   | NONE   	   | void	*ft_memset(void *b, int c, size_t len) | Fill memory with a constant byte. | <string.h> |
 | • [bzero()]()    | NONE	  |
 | • [memcpy()]()   | NONE	  |
 | • [memmove()]()  | NONE	  |
@@ -101,7 +101,7 @@ Part I :
 | • [strlcat()]()  | NONE	  |
 | • [toupper()]()  | NONE	  |
 | • [tolower()]()  | NONE	  |
-| • [strchr()]()   | NONE   |
+| • [strchr()]()   | NONE   	  |
 | • [strrchr()]()  | NONE	  |
 | • [strncmp()]()  | NONE	  |
 | • [memchr()]()   | NONE	  |
@@ -126,7 +126,8 @@ Part I :
 |     | • [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
 |     | • [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
 |     | • [isascii](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | [man](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value) |
-|     | • [strlen](https://github.com/ablaamim/libft/blob/main/ft_strlen.c) | [man](http://manpagesfr.free.fr/man/man3/strlen.3.html) |
+|     | • [strlen](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | [man](http://manpagesfr.free.fr/man/man3/strlen.3.html) |
+|     | • [memset](https://github.com/ablaamim/libft/blob/main/ft_memset.c)   | [man](https://man7.org/linux/man-pages/man3/memset.3.html) |
 
 ---
 
