@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 16:38:14 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 13:46:37 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/20 00:08:45 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+
 size_t	ft_strlen(const char *s);
+void	*ft_memset(void *b, int c, size_t len);
 
 #endif
