@@ -35,15 +35,15 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	if (ft_strlen(str2) != strlen(str2))
-		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 2.\n", DEFAULT);
+		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 3.\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	if (ft_strlen(str3) != strlen(str3))
-		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 2.\n", DEFAULT);
+		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 4.\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	if (ft_strlen(str4) != strlen(str4))
-		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 2.\n", DEFAULT);
+		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 5.\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "------------------- FINISH ------------------\n", DEFAULT);
