@@ -90,8 +90,8 @@ Part I :
 | • [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | NONE	   | int	ft_isalpha (int	c) | Checks for an alphabetic character. | <ctype.h> |
 | • [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | NONE	   | int	ft_isdigit (int	c) | Checks for a digit (0 through 9). | <ctype.h> |
 | • [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | NONE	   | int	ft_isalnum (int	c) | Checks for an alphanumeric character. | <ctype.h> |
-| • [isascii()](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | NONE	   | int	ft_isascii (int c) |  checks whether c fits into the ASCII character set | <ctype.h> |
-| • [isprint()]()  | NONE	  |
+| • [isascii()](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | NONE	   | int	ft_isascii (int c) | Checks whether c fits into the ASCII character set. | <ctype.h> |
+| • [isprint()](https://github.com/ablaamim/libft/blob/main/ft_isprint.c) | NONE	   | int	ft_isprint (int c) | Checks for any printable character. | <ctype.h> |
 | • [strlen()]()   | NONE	  |
 | • [memset()]()   | NONE   |
 | • [bzero()]()    | NONE	  |
