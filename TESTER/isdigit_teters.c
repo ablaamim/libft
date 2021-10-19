@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 19:30:29 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/18 19:53:32 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/19 12:18:31 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	main(int argc, char *argv[])
 	char	*test = "0123456789";
 	char	*test1 = "abcdefghzkABCDEFGHZK";
 	char	*test2 = "~\t \n()\0\r\v\b{}[]*#@!";
+
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------- TEST 1 ------------------\n", DEFAULT);
 	while (index < 10)

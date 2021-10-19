@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 18:28:14 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/18 19:08:09 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/19 12:19:11 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ int	main(int argc, char *argv[])
 	(void)	argv;
 	(void)	argc;
 	int		index;
-	char	test[] = "abcdexyz";
+	char	test[] = "abcdexyzABCDEXYZ";
 	char	test1[] = "0123456789";
 	char	test2[] = "\0\n@$*!:[]{}~`'/";
 
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
-	while (index < 8)
+	while (index < 16)
 	{
 		if (ft_isalpha(test[index]) == 0)
 			printf("%s%s%s", RED, "[KO] ---> YOUR IS ALPHA DOES NOT WORK FOR ALPHA CHARACTERS.\n", DEFAULT);

@@ -1,36 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/17 16:38:14 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 12:33:56 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/10/19 12:32:43 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/10/19 12:33:31 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# define FT_SUCCESS 1
-# define FT_FAILURE 0
+#include "libft.h"
 
-/*  REMOVE LATER   */
-
-# define RED		"\033[31m"
-# define GREEN		"\033[32m"
-# define DEFAULT	"\033[0m"
-
-/*********************/
-
-# include <unistd.h>
-# include <stdlib.h>
-
-/* Part 1 */
-
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-
-#endif
+int	ft_isascii(int c)
+{
+	if (c >= 0 && c <= 127)
+		return (FT_SUCCESS);
+	return (FT_FAILURE);
+}
