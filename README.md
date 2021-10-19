@@ -90,7 +90,7 @@ Part I :
 | • [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | NONE	   | int	ft_isalpha (int	c) | Checks for an alphabetic character. | <ctype.h> |
 | • [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | NONE	   | int	ft_isdigit (int	c) | Checks for a digit (0 through 9). | <ctype.h> |
 | • [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | NONE	   | int	ft_isalnum (int	c) | Checks for an alphanumeric character. | <ctype.h> |
-| • [isascii()]()  | NONE	  |
+| • [isascii()](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | NONE	   | int	ft_isascii (int c) |  checks whether c fits into the ASCII character set | <ctype.h> |
 | • [isprint()]()  | NONE	  |
 | • [strlen()]()   | NONE	  |
 | • [memset()]()   | NONE   |
@@ -125,6 +125,7 @@ Part I :
 |     | • [isalpha](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)  |
 |     | • [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
 |     | • [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
+|     | • [isascii](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | [mac](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value) |
 
 ---
 
