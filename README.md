@@ -95,7 +95,7 @@ Part I :
 | • [strlen()](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | NONE	   | size_t strlen(const char *s)  | Calculate the length of a string. | <string.h> | 
 | • [memset()](https://github.com/ablaamim/libft/blob/main/ft_memset.c)   | NONE   	   | void	*ft_memset(void *b, int c, size_t len) | Fill memory with a constant byte. | <string.h> |
 | • [bzero()](https://github.com/ablaamim/libft/blob/main/ft_bzero.c)     | NONE	   | void	ft_bzero(void *s, size_t n) | Zero a byte string. | <string.h> |
-| • [memcpy()]()   | NONE	  |
+| • [memcpy()](https://github.com/ablaamim/libft/blob/main/ft_memcpy.c)   | NONE	   | void	*ft_memcpy(void *dest, const void *src, size_t n) | copy memory area | <string.h>| 
 | • [memmove()]()  | NONE	  |
 | • [strlcpy()]()  | NONE	  |
 | • [strlcat()]()  | NONE	  |
@@ -126,9 +126,10 @@ Part I :
 |     | • [isdigit](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)  |
 |     | • [isalnum](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | [man](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)  |
 |     | • [isascii](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | [man](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value) |
-|     | • [strlen](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | [man](http://manpagesfr.free.fr/man/man3/strlen.3.html) |
+|     | • [strlen](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | [man](http://manpagesfr.free.fr/man/man3/strlen.3.html)    |
 |     | • [memset](https://github.com/ablaamim/libft/blob/main/ft_memset.c)   | [man](https://man7.org/linux/man-pages/man3/memset.3.html) |
-|     | • [bzero](https://github.com/ablaamim/libft/blob/main/ft_bzero.c)     | [man](https://man7.org/linux/man-pages/man3/bzero.3.html) |
+|     | • [bzero](https://github.com/ablaamim/libft/blob/main/ft_bzero.c)     | [man](https://man7.org/linux/man-pages/man3/bzero.3.html)  |
+|     | • [memcpy](https://github.com/ablaamim/libft/blob/main/ft_memcpy.c)   | [man](https://man7.org/linux/man-pages/man3/memcpy.3.html) |
 
 ---
 
@@ -136,10 +137,10 @@ Part I :
 
 > You must also re-code the following functions, using the function “malloc”:
 
-|  Function   | Allowed function  | Prototype | Description | Manual |
-|---          |---                |---	   |---       |---      |
-| • calloc()   |  malloc()         |           |       |      |
-| • strdup()   |  malloc()         |	   |       |      |
+|  Function    | Allowed function  | Prototype | Description | Manual  |
+|---           |---                |---	       |---          |---      |
+| • calloc()   |  malloc()         |           |             |         |
+| • strdup()   |  malloc()         |	       |             |         |
 
 ---
 
