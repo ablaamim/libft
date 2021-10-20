@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 12:51:21 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/20 01:25:27 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/10/20 01:23:43 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/10/20 01:25:01 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= ' ' && c <= '~')
-		return (FT_SUCCESS);
-	return (FT_FAILURE);
+	while (n--)
+		*(unsigned char *)(s++) = 0;
 }
