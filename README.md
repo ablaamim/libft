@@ -97,8 +97,8 @@ Part I :
 | • [bzero()](https://github.com/ablaamim/libft/blob/main/ft_bzero.c)     | NONE	   | void	ft_bzero(void *s, size_t n) | Zero a byte string.                          | <string.h> |
 | • [memcpy()](https://github.com/ablaamim/libft/blob/main/ft_memcpy.c)   | NONE	   | void	*ft_memcpy(void *dest, const void *src, size_t n)   | Copy memory area.    | <string.h> | 
 | • [memmove()](https://github.com/ablaamim/libft/blob/main/ft_memmove.c) | NONE	   | void	*ft_memmove(void *dst, const void *src, size_t len) | Function copies n bytes from memory area src to memory area dest. | <string.h> |
-| • [strlcpy()](https://github.com/ablaamim/libft/blob/main/ft_strlcpy.c) | NONE	   | size_t	ft_strlcpy(char *dst, const char *src, size_t dstlen) |  Copy string to an specific size. | <string.h> |
-| • [strlcat()]()  | NONE	  |
+| • [strlcpy()](https://github.com/ablaamim/libft/blob/main/ft_strlcpy.c) | NONE	   | size_t	ft_strlcpy(char *dst, const char *src, size_t dstlen) |  Copy string to a specific size. | <string.h> |
+| • [strlcat()](https://github.com/ablaamim/libft/blob/main/ft_strlcat.c) | NONE	   | size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize) | Concatenate string to a specific size. | <string.h> |
 | • [toupper()]()  | NONE	  |
 | • [tolower()]()  | NONE	  |
 | • [strchr()]()   | NONE   	  |
@@ -132,6 +132,7 @@ Part I :
 |     | • [memcpy](https://github.com/ablaamim/libft/blob/main/ft_memcpy.c)   | [man](https://man7.org/linux/man-pages/man3/memcpy.3.html) |
 |     | • [memmove](https://github.com/ablaamim/libft/blob/main/ft_memmove.c) | [man](https://man7.org/linux/man-pages/man3/memmove.3.html) |
 |     | • [strlcpy](https://github.com/ablaamim/libft/blob/main/ft_strlcpy.c) | [man](https://www.cs.auckland.ac.nz/~mjd/prog_contest/www.cppreference.com/c/string/strlcpy) |
+|     | • [strlcat](https://github.com/ablaamim/libft/blob/main/ft_strlcpy.c) | [man](https://www.mkssoftware.com/docs/man3/strlcat.3.asp) |
 
 ---
 
