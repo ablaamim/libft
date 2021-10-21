@@ -96,7 +96,7 @@ Part I :
 | • [memset()](https://github.com/ablaamim/libft/blob/main/ft_memset.c)   | NONE   	   | void	*ft_memset(void *b, int c, size_t len) | Fill memory with a constant byte. | <string.h> |
 | • [bzero()](https://github.com/ablaamim/libft/blob/main/ft_bzero.c)     | NONE	   | void	ft_bzero(void *s, size_t n) | Zero a byte string.                          | <string.h> |
 | • [memcpy()](https://github.com/ablaamim/libft/blob/main/ft_memcpy.c)   | NONE	   | void	*ft_memcpy(void *dest, const void *src, size_t n)   | Copy memory area.    | <string.h> | 
-| • [memmove()](https://github.com/ablaamim/libft/blob/main/ft_memmove.c) | NONE	   | void	*ft_memmove(void *dst, const void *src, size_t len) | function copies n bytes from memory area src tomemory area dest. | <string.h> |
+| • [memmove()](https://github.com/ablaamim/libft/blob/main/ft_memmove.c) | NONE	   | void	*ft_memmove(void *dst, const void *src, size_t len) | function copies n bytes from memory area src to memory area dest. | <string.h> |
 | • [strlcpy()]()  | NONE	  |
 | • [strlcat()]()  | NONE	  |
 | • [toupper()]()  | NONE	  |
