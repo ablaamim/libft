@@ -87,12 +87,12 @@ Part I :
 
 | FUNCTION      | Allowed functions | Prototype | Description | Library |
 |---		|---                |---        |---          |---      |
-| • [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | NONE	   | int	ft_isalpha (int	c) | Checks for an alphabetic character.                   | <ctype.h> |
-| • [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | NONE	   | int	ft_isdigit (int	c) | Checks for a digit (0 through 9).                     | <ctype.h> |
-| • [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | NONE	   | int	ft_isalnum (int	c) | Checks for an alphanumeric character.                 | <ctype.h> |
-| • [isascii()](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | NONE	   | int	ft_isascii (int c) | Checks whether c fits into the ASCII character set.   | <ctype.h> |
-| • [isprint()](https://github.com/ablaamim/libft/blob/main/ft_isprint.c) | NONE	   | int	ft_isprint (int c) | Checks for any printable character.                   | <ctype.h> |
-| • [strlen()](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | NONE	   | size_t strlen(const char *s)  | Calculate the length of a string.                     | <string.h> | 
+| • [isalpha()](https://github.com/ablaamim/libft/blob/main/ft_isalpha.c) | NONE	   | int	ft_isalpha (int	c)     | Checks for an alphabetic character.                   | <ctype.h> |
+| • [isdigit()](https://github.com/ablaamim/libft/blob/main/ft_isdigit.c) | NONE	   | int	ft_isdigit (int	c)     | Checks for a digit (0 through 9).                     | <ctype.h> |
+| • [isalnum()](https://github.com/ablaamim/libft/blob/main/ft_isalnum.c) | NONE	   | int	ft_isalnum (int	c)     | Checks for an alphanumeric character.                 | <ctype.h> |
+| • [isascii()](https://github.com/ablaamim/libft/blob/main/ft_isascii.c) | NONE	   | int	ft_isascii (int c)     | Checks whether c fits into the ASCII character set.   | <ctype.h> |
+| • [isprint()](https://github.com/ablaamim/libft/blob/main/ft_isprint.c) | NONE	   | int	ft_isprint (int c)     | Checks for any printable character.                   | <ctype.h> |
+| • [strlen()](https://github.com/ablaamim/libft/blob/main/ft_strlen.c)   | NONE	   | size_t 	strlen(const char *s)  | Calculate the length of a string.                     | <string.h> | 
 | • [memset()](https://github.com/ablaamim/libft/blob/main/ft_memset.c)   | NONE   	   | void	*ft_memset(void *b, int c, size_t len) | Fill memory with a constant byte. | <string.h> |
 | • [bzero()](https://github.com/ablaamim/libft/blob/main/ft_bzero.c)     | NONE	   | void	ft_bzero(void *s, size_t n) | Zero a byte string.                          | <string.h> |
 | • [memcpy()](https://github.com/ablaamim/libft/blob/main/ft_memcpy.c)   | NONE	   | void	*ft_memcpy(void *dest, const void *src, size_t n)   | Copy memory area.    | <string.h> | 
@@ -101,7 +101,7 @@ Part I :
 | • [strlcat()](https://github.com/ablaamim/libft/blob/main/ft_strlcat.c) | NONE	   | size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize) | Concatenate string to a specific size. | <string.h> |
 | • [toupper()](https://github.com/ablaamim/libft/blob/main/ft_toupper.c) | NONE	   | int	ft_toupper(int c) | Convert chat to uppercase | <ctype.h> |
 | • [tolower()](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | NONE	   | int	ft_tolower(int c) |  Convert char to lowercase. | <ctype.h> |
-| • [strchr()]()   | NONE   	  |
+| • [strchr()](https://github.com/ablaamim/libft/blob/main/ft_strchr.c)   | NONE   	   | char	*ft_strchr(const char *s, int c) |  Locate character in string (first occurrence). | <string.h> |
 | • [strrchr()]()  | NONE	  |
 | • [strncmp()]()  | NONE	  |
 | • [memchr()]()   | NONE	  |
