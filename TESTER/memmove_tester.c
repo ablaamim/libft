@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 17:57:40 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/20 18:22:48 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/21 23:02:16 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 
 int	main(int argc, char *argv[])
 {
+	(void)	argv;
+	(void)	argc;
 	char	str0[13] = "Hello world!";
 	char	str1[13] = "Hello world!";
 	char	str2[4] = "lol";
