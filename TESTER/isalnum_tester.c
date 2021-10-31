@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 21:41:52 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 12:17:17 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/31 13:36:16 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,13 @@ int	main(int argc, char *argv[])
 	(void)	argv;
 	(void)	argc;
 	int		index;
-	char	*test = "0123456789";
-	char	*test1 = "abcdxyzABCDXYZLOL";
-	char	*test2 = "!@~\n \t\b\v[](}";
-	char	*test3 = "\0\0\0";
-	char	*test4 = "-!*&\0 ()++--/*";
+	char	test[] = "0123456789";
+	char	test1[] = "abcdxyzABCDXYZLOL";
+	char	test2[] = "!@~\n \t\b\v[](}";
+	char	test3[] = "\0\0\0";
+	char	test4[] = "-!*&\0 ()++--/*";
 
+// TEST 1
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
 	while (index < 10)
@@ -36,6 +37,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+
+// TEST 2
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	while (index < 17)
@@ -46,6 +49,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+
+// TEST 3
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
 	while (index < 12)
@@ -56,6 +61,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN , "[OK]\n", DEFAULT);
 		index++;
 	}
+
+// TEST 4
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 4 -------------------\n", DEFAULT);
 	while (index < 3)
@@ -66,7 +73,9 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+// TEST 5
 	index = 0;
+	printf("%s%s%s", GREEN, "------------------ TEST 5 --------------------\n", DEFAULT);
 	while (index < 14)
 	{
 		if (ft_isalnum(test4[index]) == 1)
