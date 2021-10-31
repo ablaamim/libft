@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 21:41:52 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/31 13:36:16 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/31 13:40:48 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ int	main(int argc, char *argv[])
 	(void)	argv;
 	(void)	argc;
 	int		index;
-	char	test[] = "0123456789";
-	char	test1[] = "abcdxyzABCDXYZLOL";
-	char	test2[] = "!@~\n \t\b\v[](}";
-	char	test3[] = "\0\0\0";
-	char	test4[] = "-!*&\0 ()++--/*";
+	char	test[] = "0123456789"; // NUMERICS
+	char	test1[] = "abcdxyzABCDXYZLOL"; // ALPHA CHARS
+	char	test2[] = "!@~\n \t\b\v[](}"; //SPECIAL CHARS + WHITE SPACES
+	char	test3[] = "\0\0\0"; // NULL CHAR
+	char	test4[] = "-!*&\0 ()++--/*"; // MORE SPECIAL CHARS
 
 // TEST 1
 	index = 0;
@@ -32,7 +32,7 @@ int	main(int argc, char *argv[])
 	while (index < 10)
 	{
 		if (ft_isalnum(test[index]) == 0)
-			printf("%s%s%s", RED, "[KO] --> YOUR ISALNUM DOES NOT SUPPORT NUM CHARACTERS.\n", DEFAULT);
+			printf("%s%s%s", RED, "[KO] --> YOUR ISALNUM DOES NOT SUPPORT NUMERIC CHARACTERS.\n", DEFAULT);
 		else
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
@@ -56,7 +56,7 @@ int	main(int argc, char *argv[])
 	while (index < 12)
 	{
 		if (ft_isalnum(test2[index]) != isalnum(test2[index]))
-			printf("%s%s%s", RED, "[KO] --> YOUR ISALNUM FAILED ON ascii less or equal to 32.\n", DEFAULT);
+			printf("%s%s%s", RED, "[KO] --> YOUR ISALNUM FAILED ON SPECIAL CHARS AND WHITESPACES.\n", DEFAULT);
 		else
 			printf("%s%s%s", GREEN , "[OK]\n", DEFAULT);
 		index++;

@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 12:34:12 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 13:31:53 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/31 13:44:58 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	main(int argc, char *argv[])
 	char	*test3 = "\0\0\0";
 	char	*test4 = "-!*&\0 ()++--/*";
 
+// TEST 1
 	index = 0;
 	printf("%s%s%s", GREEN, "-------------------- TEST 1 -----------------\n", DEFAULT);
 	while (index < 10)
@@ -36,6 +37,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+
+// TEST 2
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	while (index < 17)
@@ -46,16 +49,20 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+
+// TEST 3
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
 	while (index < 12)
 	{
 		if (ft_isascii(test2[index]) != isascii(test2[index]))
-			printf("%s%s%s", RED, "[KO] --> YOUR ISASCII FAILED ON ascii less or equal to 32.\n", DEFAULT);
+			printf("%s%s%s", RED, "[KO] --> YOUR ISASCII FAILED ON SPECIAL CHARS.\n", DEFAULT);
 		else
 			printf("%s%s%s", GREEN , "[OK]\n", DEFAULT);
 		index++;
 	}
+
+// TEST 4
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 4 -------------------\n", DEFAULT);
 	while (index < 3)
@@ -66,7 +73,10 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+
+// TEST 5
 	index = 0;
+	printf("%s%s%s", GREEN, "------------------ TEST 5 ------------------\n", DEFAULT);
 	while (index < 14)
 	{
 		if (ft_isascii(test4[index]) == 0)

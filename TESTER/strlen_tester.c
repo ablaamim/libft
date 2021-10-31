@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 13:40:00 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 13:52:53 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/31 14:28:42 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,25 +25,12 @@ int	main(int argc, char *argv[])
 	char	str3[] = "Thi$ $hit i$ DeliC4TE\t! \n";
 	char	str4[] = "\0";
 
+
+// ALL TESTS IN ONE
 	printf("%s%s%s", GREEN, "------------------- TESTS -------------------\n", DEFAULT);
-	if (ft_strlen(str) != strlen(str))
+	if (ft_strlen(str) != strlen(str) && ft_strlen(str1) != strlen(str1) && strlen(str2) != ft_strlen(str2) &&
+		ft_strlen(str3) != strlen(str3) && ft_strlen(str4) != strlen(str4))
 		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 1 .\n", DEFAULT);
-	else
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
-	if (ft_strlen(str1) != strlen(str1))
-		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 2.\n", DEFAULT);
-	else
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
-	if (ft_strlen(str2) != strlen(str2))
-		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 3.\n", DEFAULT);
-	else
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
-	if (ft_strlen(str3) != strlen(str3))
-		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 4.\n", DEFAULT);
-	else
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
-	if (ft_strlen(str4) != strlen(str4))
-		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 5.\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "------------------- FINISH ------------------\n", DEFAULT);

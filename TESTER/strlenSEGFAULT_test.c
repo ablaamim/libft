@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   strlenSEGFAULT_test.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 12:32:43 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/31 13:41:38 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/10/31 14:25:49 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/10/31 14:28:12 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "../libft.h"
 
-int	ft_isascii(int c)
+int	main(int argc, char **argv)
 {
-	return (c >= 0 && c <= 127);
+	(void)	argc;
+	(void)	argv;
+	printf("%zu\n", ft_strlen(NULL));
+	return (EXIT_SUCCESS);
 }
