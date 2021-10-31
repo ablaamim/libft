@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 19:30:29 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/19 13:34:44 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/10/31 12:53:04 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,11 @@ int	main(int argc, char *argv[])
 	(void)	argc;
 	(void)	argv;
 	int		index;
-	char	*test = "0123456789";
-	char	*test1 = "abcdefghzkABCDEFGHZK";
-	char	*test2 = "~\t \n()\0\r\v\b{}[]*#@!";
+	char	test[] = "0123456789";
+	char	test1[] = "abcdefghzkABCDEFGHZK";
+	char	test2[] = "~\t \n()\0\r\v\b{}[]*#@!";
 
+// TEST 1
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------- TEST 1 ------------------\n", DEFAULT);
 	while (index < 10)
@@ -35,6 +36,8 @@ int	main(int argc, char *argv[])
 		index++;
 	}
 	printf("%s%s%s", GREEN, "-------------------- TEST 2 -----------------\n", DEFAULT);
+
+// TEST 2
 	index = 0;
 	while (index < 20)
 	{
@@ -47,6 +50,9 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+
+
+// TEST 3
 	index = 0;
 	printf("%s%s%s", GREEN, "-------------------- TEST 3 -----------------\n", DEFAULT);
 	while (index < 18)
