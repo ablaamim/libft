@@ -103,11 +103,11 @@ Part I :
 | • [tolower()](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | NONE	   | int	ft_tolower(int c) |  Convert char to lowercase. | <ctype.h> |
 | • [strchr()](https://github.com/ablaamim/libft/blob/main/ft_strchr.c)   | NONE   	   | char	*ft_strchr(const char *s, int c)  |  Locate character in string (first occurrence). | <string.h> |
 | • [strrchr()](https://github.com/ablaamim/libft/blob/main/ft_strrchr.c) | NONE	   | char	*ft_strrchr(const char *s, int c) |  Locate character in string (last occurrence).  | <string.h> |
-| • [strncmp()]()  | NONE	  |
-| • [memchr()]()   | NONE	  |
-| • [memcmp()]()   | NONE	  |
-| • [strnstr()]()  | NONE	  |
-| • [atoi()]()     | NONE	  |
+| • [strncmp()]()  | NONE	  |  |  | <string.h> |
+| • [memchr()]()   | NONE	  |  |  | <string.h> |
+| • [memcmp()]()   | NONE	  |  |  | <string.h> |
+| • [strnstr()]()  | NONE	  |  |  | <string.h> |
+| • [atoi()]()     | NONE	  | int	ft_atoi(const char *s)  |  | <stdlib.h> |
 
 ---
 
@@ -144,8 +144,8 @@ Part I :
 
 |  Function    | Allowed function  | Prototype | Description | Manual  |
 |---           |---                |---	       |---          |---      |
-| • calloc()   |  malloc()         |           |             |         |
-| • strdup()   |  malloc()         |	       |             |         |
+| • strdup()   |  malloc()         |char	*ft_strdup(const char *s)  | Duplicate a string. |  [man](https://man7.org/linux/man-pages/man3/strdup.3.html) |
+| • calloc()   |  malloc()         |       |             |         |
 
 ---
 
