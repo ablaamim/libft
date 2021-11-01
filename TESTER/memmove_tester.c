@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/20 17:57:40 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/21 23:02:16 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/01 18:08:43 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/01 18:13:45 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,12 @@ int	main(int argc, char *argv[])
 	int		*ptr_arr0;
 	int		*ptr_arr1;
 	int		index;
+
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\tTESTING YOUR MEMMOVE FUNCTION : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
 
 	ptr_str0 = memmove(str0, str0 + 6, 0);
 	ptr_str1 = ft_memmove(str1, str1 + 6, 0);
@@ -86,6 +92,7 @@ int	main(int argc, char *argv[])
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
-	printf("%s%s%s", GREEN, "------------------- FINISH ------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "------------------- FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
