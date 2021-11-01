@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 18:28:14 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/31 12:44:33 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/01 11:39:42 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/01 12:42:42 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,24 @@ int	main(int argc, char *argv[])
 	char	test[] = "abcdexyzABCDEXYZ";
 	char	test1[] = "0123456789";
 	char	test2[] = "\0\n@$*!:[]{}~`'/";
+	int	len0;
+	int	len1;
+	int	len2;
 
-// TEST 1
+	len0 = sizeof(test) / sizeof(test[0]) - 1;
+	len1 = sizeof(test1) / sizeof(test1[0]) - 1;
+	len2 = sizeof(test2) / sizeof(test2[0]) - 1;
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t\tTESTING YOUR ISALPHA\n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
+	// TEST 1
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
-	while (index < 16)
+	while (index < len0)
 	{
-		if (ft_isalpha(test[index]) == 0)
+		if (ft_isalpha(test[index]) != isalpha(test[index]))
 			printf("%s%s%s", RED, "[KO] ---> YOUR ISALPHA DOES NOT WORK FOR ALPHA CHARACTERS.\n", DEFAULT);
 		else
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
@@ -39,7 +50,7 @@ int	main(int argc, char *argv[])
 // TEST 2
 	index = 0;
 	printf("%s%s%s", GREEN, "----------------- TEST 2 --------------------\n", DEFAULT);
-	while (index < 10)
+	while (index < len1)
 	{
 		if (ft_isalpha(test1[index]) == 1)
 			printf("%s%s%s", RED, "[KO] ---> YOUR ISALPHA DOES NOT WORK FOR NUMERIC VALUES.\n", DEFAULT);
@@ -47,11 +58,10 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
-
 // TEST 3
 	index = 0;
 	printf("%s%s%s", GREEN, "----------------- TEST 3 --------------------\n", DEFAULT);
-	while (index < 16)
+	while (index < len2)
 	{
 		if (ft_isalpha(test2[index]) != isalpha(test2[index]))
 		{
@@ -64,6 +74,6 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
-	printf("%s%s%s", GREEN, "------------------ FINISH -------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "------------------ FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
