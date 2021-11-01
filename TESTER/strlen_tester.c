@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 13:40:00 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/31 14:28:42 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/01 14:38:07 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/01 14:43:30 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ int	main(int argc, char *argv[])
 	char	str3[] = "Thi$ $hit i$ DeliC4TE\t! \n";
 	char	str4[] = "\0";
 
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t     TESTING YOUR STRLEN : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
 
 // ALL TESTS IN ONE
 	printf("%s%s%s", GREEN, "------------------- TESTS -------------------\n", DEFAULT);
@@ -33,6 +38,7 @@ int	main(int argc, char *argv[])
 		printf("%s%s%s", RED, "[KO] --> YOU FAILED TEST 1 .\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
-	printf("%s%s%s", GREEN, "------------------- FINISH ------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "-------------------- FINISH ------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

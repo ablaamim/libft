@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 12:34:12 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/31 13:44:58 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/01 14:27:51 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/01 14:46:40 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,17 @@ int	main(int argc, char *argv[])
 	(void)	argc;
 	(void)	argv;
 	int		index;
-	char	*test = "0123456789";
-	char	*test1 = "abcdxyzABCDXYZLOL";
-	char	*test2 = "!@~\n \t\b\v[](}";
-	char	*test3 = "\0\0\0";
-	char	*test4 = "-!*&\0 ()++--/*";
+	char	test[] = "0123456789";
+	char	test1[] = "abcdxyzABCDXYZLOL";
+	char	test2[] = "!@~\n \t\b\v[](}";
+	char	test3[] = "\0\0\0";
+	char	test4[] = "-!*&\0 ()++--/*";
+
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t TESTING YOUR ISASCII FUNCTION : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
 
 // TEST 1
 	index = 0;
@@ -76,7 +82,7 @@ int	main(int argc, char *argv[])
 
 // TEST 5
 	index = 0;
-	printf("%s%s%s", GREEN, "------------------ TEST 5 ------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "------------------ TEST 5 -------------------\n", DEFAULT);
 	while (index < 14)
 	{
 		if (ft_isascii(test4[index]) == 0)
@@ -85,6 +91,7 @@ int	main(int argc, char *argv[])
 				printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
-	printf("%s%s%s", GREEN, "------------------- FINISH ------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "------------------- FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

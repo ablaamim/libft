@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 11:35:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/01 11:35:10 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/01 14:44:44 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ int	main(int argc, char *argv[])
 				printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	printf("%s%s%s", BLUE, "------------------ FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
