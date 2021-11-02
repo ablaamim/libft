@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 14:21:27 by ablaamim          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/10/31 16:18:18 by ablaamim         ###   ########.fr       */
-=======
-/*   Updated: 2021/11/01 17:59:32 by ablaamim         ###   ########.fr       */
->>>>>>> 417239ed2509c92769a04fd1edd3973fa0e98cc4
+/*   Created: 2021/11/01 16:11:30 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/01 16:30:54 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+int	my_strlen(const char *s)
 {
-	unsigned char	*pb;
+	int	i;
 
-	pb = (unsigned char *) b;
-	while (len--)
-		*pb++ = (unsigned char) c;
-	return (b);
+	i = 0;
+	while (*s++)
+		i++;
+	return (i);
+}
+
+char	*ft_strdup(const char *s)
+{
+	int		len;
+	char	*dest;
+
+	len = my_strlen(s);
+	if (s == NULL)
+		return (NULL);
+	dest = (char *) malloc(sizeof (*s) * (len + 1));
+	while (*s)
+		*dest++ = *s++;
+	*dest = '\0';
+	return (dest);
 }

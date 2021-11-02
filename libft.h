@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/17 16:38:14 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/22 15:01:37 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/01 10:59:15 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/01 18:16:21 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@
 # define RED		"\033[31m"
 # define GREEN		"\033[32m"
 # define DEFAULT	"\033[0m"
-
+# define BLUE		"\033[0;34m"
 /*********************/
 
 # include <unistd.h>
 # include <stdlib.h>
-
+# include <string.h>
 /* Part 1 */
 
 int		ft_isalpha(int c);
@@ -47,5 +47,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strdup(const char *s);
 
 #endif
