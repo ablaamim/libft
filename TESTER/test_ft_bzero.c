@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   test_ft_bzero.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/02 08:39:01 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/02 08:40:05 by ablaamim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../libft.h"
 #include <stdio.h>
 #include <strings.h>
@@ -12,7 +24,8 @@ int	main(void)
 	int		arr1[5] = {1, 2, 3, 4, 5};
 	int		index;
 
-	index =0;
+	printf("%s%s%s", GREEN, "\t TESTING YOUR BZERO FUNCTION : \n", DEFAULT);
+	index = 0;
 	bzero(str0, 13);
 	ft_bzero(str1, 13);
 	while (index < 13)
