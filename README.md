@@ -103,11 +103,11 @@ Part I :
 | • [tolower()](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | NONE	   | int	ft_tolower(int c) |  Convert char to lowercase. | <ctype.h> |
 | • [strchr()](https://github.com/ablaamim/libft/blob/main/ft_strchr.c)   | NONE   	   | char	*ft_strchr(const char *s, int c)  |  Locate character in string (first occurrence). | <string.h> |
 | • [strrchr()](https://github.com/ablaamim/libft/blob/main/ft_strrchr.c) | NONE	   | char	*ft_strrchr(const char *s, int c) |  Locate character in string (last occurrence).  | <string.h> |
-| • [strncmp()]()  | NONE	  |  |  | <string.h> |
-| • [memchr()]()   | NONE	  |  |  | <string.h> |
-| • [memcmp()]()   | NONE	  |  |  | <string.h> |
-| • [strnstr()]()  | NONE	  |  |  | <string.h> |
-| • [atoi()]()     | NONE	  | int	ft_atoi(const char *s)  |  | <stdlib.h> |
+| • [strncmp()]()  | NONE	  |  | Compare n bytes of two strings.  | <string.h> |
+| • [memchr()]()   | NONE	  |  | Scan memory for a character. | <string.h> |
+| • [memcmp()]()   | NONE	  |  | Compare memory areas.  | <string.h> |
+| • [strnstr()]()  | NONE	  |  | Locate a substring in a string.  | <string.h> |
+| • [atoi()]()     | NONE	  |  int	ft_atoi(const char *s)  |  | <stdlib.h> |
 
 ---
 
@@ -144,8 +144,8 @@ Part I :
 
 |  Function    | Allowed function  | Prototype | Description | Manual  |
 |---           |---                |---	       |---          |---      |
-| • strdup()   |  malloc()         |char	*ft_strdup(const char *s)  | Duplicate a string. |  [man](https://man7.org/linux/man-pages/man3/strdup.3.html) |
-| • calloc()   |  malloc()         |       |             |         |
+| • strdup()   |  malloc()         | char	*ft_strdup(const char *s)  | Duplicate a string. |  [man](https://man7.org/linux/man-pages/man3/strdup.3.html) |
+| • calloc()   |  malloc()         |       | Allocate memory by filling it with zeros. |         |
 
 ---
 
@@ -171,27 +171,17 @@ Part II :
 
 <p align=center>
 
-• substr
-
-• strjoin
-
-• strtrim
-
-• split
-
-• itoa
-
-• strmapi
-
-• striteri
-
-• putchar_fd
-
-• putstr_fd
-
-• putendl_fd
-
-• putnbr_fd
+- ft_substr	- returns a substring from a string
+- ft_strjoin.c	- concatenates two strings
+- ft_strtrim.c	- trims the beginning and end of string with specific set of chars
+- ft_split.c	- splits a string using a char as parameter
+- ft_itoa.c	- converts a number into a string
+- ft_strmapi.c	- applies a function to each character of a string
+- ft_striteri.c	- applies a function to each character of a string
+- ft_putchar_fd.c	- output a char to a file descriptor
+- ft_putstr_fd.c	- output a string to a file descriptor
+- ft_putendl_fd.c	- output a string to a file descriptor, followed by a new line
+- ft_putnbr_fd.c	- output a number to a file descriptor
 
 </p>
 
@@ -207,23 +197,14 @@ Part II :
 > <i>The following functions will allow you to easily use your lists.</i>
 <p align=center>
 
-• lstnew
-
-• lstadd_front
-
-• lstsize
-
-• lstlast
-
-• lstadd_back
-
-• lstdelone
-
-• lstclear
-
-• lstiter
-
-• lstmap
+- ft_lstnew	- creates a new list element
+- ft_lstadd_front	- adds an element at the beginning of a list
+- ft_lstsize	- counts the number of elements in a list
+- ft_lstlast	- returns the last element of the list
+- ft_lstadd_back	- adds an element at the end of a list
+- ft_lstclear	- deletes and free list
+- ft_lstiter	- applies a function to each element of a list
+- ft_lstmap	- applies a function to each element of a list
 
 </p>
 
