@@ -5,11 +5,10 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/20 13:33:10 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/20 13:49:18 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/02 08:02:53 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../libft.h"
 #include <stdio.h>
@@ -31,6 +30,12 @@ int	main(int argc, char *argv[])
 	char *thirty_a = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\0";
 	char *ten_a = "aaaaaaaaaa\0";
 
+	/**************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t TESTING YOUR MEMCPY FUNCTION : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	/**************************************************************************/
+
 	memcpy(twenty, ten_a, 1);
 	ft_memcpy(ft_twenty, ten_a, 1);
 	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
@@ -44,7 +49,7 @@ int	main(int argc, char *argv[])
 	{
 		printf(GREEN);
 		printf("[OK]\n");
-		printf(DEFAULT);
+		printf(DEFAULT);	
 	}
 	memcpy(twenty2, thirty_a, 19);
 	ft_memcpy(ft_twenty2, thirty_a, 19);
@@ -121,6 +126,7 @@ int	main(int argc, char *argv[])
 		printf("[OK]\n");
 		printf(DEFAULT);
 	}
-	printf("%s%s%s", GREEN, "------------------ FINISH -------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "------------------ FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

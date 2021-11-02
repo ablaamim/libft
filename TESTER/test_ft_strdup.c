@@ -1,31 +1,54 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   test_ft_strdup.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/02 08:06:29 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/02 08:21:30 by ablaamim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../libft.h"
 #include <stdio.h>
 #include <string.h>
 
-int	main(void)
+int	main(int argc, char **argv)
 {
+	(void)	argc;
+	(void)	argv;
 	char	str0[13] = "Hello world!";
-	char	str1[5] = "42sp";
+	char	str1[6] = "1337BG";
 	char	*ret_str0;
 	char	*ret_str1;
 
-
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t    TESTING YOUR STRDUP : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
+// TEST 1
+	printf("%s%s%s", GREEN, "------------------- TEST 1 ------------------\n", DEFAULT);
 	ret_str0 = strdup(str0);
 	ret_str1 = ft_strdup(str0);
 	if (!strcmp(str0, ret_str1) && !strcmp(ret_str0, ret_str1))
-		printf("\033[92mTest %2.i - OK \033[0m\n", 1);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", 1);
+		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_str0);
 	free(ret_str1);
-
+// TEST 2
+	printf("%s%s%s", GREEN, "------------------- TEST 2 ------------------\n", DEFAULT);
 	ret_str0 = strdup(str1);
 	ret_str1 = ft_strdup(str1);
 	if (!strcmp(str1, ret_str1) && !strcmp(ret_str0, ret_str1))
-		printf("\033[92mTest %2.i - OK \033[0m\n", 2);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", 2);
+		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_str0);
 	free(ret_str1);
-	return (0);
+	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	return (EXIT_SUCCESS);
 }
