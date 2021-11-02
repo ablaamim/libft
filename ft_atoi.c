@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 17:49:02 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/01 18:02:24 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/02 07:36:05 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *s)
 {
-	int	res;
-	int	sign;
+	long	res;
+	int		sign;
 
 	sign = 1;
 	res = 0;
@@ -23,7 +23,7 @@ int	ft_atoi(const char *s)
 		s++;
 	if (*s == '-')
 		sign *= -1;
-	while (*s == '+' || *s == '-')
+	if (*s == '+' || *s == '-')
 		s++;
 	while (*s >= 48 && *s <= 57)
 	{
