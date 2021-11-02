@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 08:55:58 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/02 09:08:25 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/02 09:10:24 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int	main(int argc, char **argv)
 	(void)	argv;
 	int		ret_strncmp;
 	int		ret_ft_strncmp;
-	char	str0[] = {"Hello world!"};
-	char	str1[] = {"Hello world"};
+	char	str0[] = {"THATS WHAT SHE SAID"};
+	char	str1[] = {"THATS WHAT SHE SAID"};
 	char	str2[] = {"1337 BENGUERIR"};
-	char	str3[] = {"Can I help you?"};
+	char	str3[] = {"DONT STRNCMP WHAT CANT BE COMPARED."};
 
 	/**************************************************************************/
 	printf("%s%s%s", BLUE, "-----------------------------------------------\n", DEFAULT);
