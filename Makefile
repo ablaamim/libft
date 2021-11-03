@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/11/02 05:42:05 by ablaamim          #+#    #+#              #
-#    Updated: 2021/11/02 05:42:07 by ablaamim         ###   ########.fr        #
+#    Created: 2021/11/03 19:39:18 by ablaamim          #+#    #+#              #
+#    Updated: 2021/11/03 19:40:02 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,9 +37,9 @@ SRC				=	ft_isalpha.c \
 
 OBJ			=	$(SRC:.c=.o)
 OBJ_BONUS		=	$(SRC_BONUS:.c=.o)
-	
+
 HEADER_DIR		=	.
-	
+
 CC				=	clang
 CFLAGS			=	-Wall -Wextra -Werror
 

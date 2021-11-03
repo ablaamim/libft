@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:08:43 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/01 18:13:45 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/03 19:48:37 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int	main(int argc, char *argv[])
 {
@@ -38,7 +39,7 @@ int	main(int argc, char *argv[])
 	printf("%s%s%s", BLUE, "\tTESTING YOUR MEMMOVE FUNCTION : \n", DEFAULT);
 	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
 /******************************************************************************/
-
+// TEST 1
 	ptr_str0 = memmove(str0, str0 + 6, 0);
 	ptr_str1 = ft_memmove(str1, str1 + 6, 0);
 	printf("%s%s%s", GREEN, "------------------- TEST 1 ------------------\n", DEFAULT);
@@ -46,7 +47,9 @@ int	main(int argc, char *argv[])
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
-
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
+// TEST 2
 	ptr_str0 = memmove(str0 + 5, str0 + 4, 4);
 	ptr_str1 = ft_memmove(str1 + 5, str1 + 4, 4);
 	printf("%s%s%s", GREEN, "------------------- TEST 2 ------------------\n", DEFAULT);
@@ -54,7 +57,9 @@ int	main(int argc, char *argv[])
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
-
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
+	// TEST 3
 	ptr_str2 = ft_memmove(str2, str0, 3);
 	ptr_str3 = memmove(str3, str1, 3);
 	printf("%s%s%s", GREEN, "------------------- TEST 3 ------------------\n", DEFAULT);
@@ -62,8 +67,10 @@ int	main(int argc, char *argv[])
 		printf("%s%s%s", GREEN,"[OK]\n", DEFAULT);
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
-	
-	index =0;
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
+//TEST 4
+	index = 0;
 	ptr_arr0 = memmove(arr0, arr0 + 2, 3 * sizeof(*arr0));
 	ptr_arr1 = ft_memmove(arr1, arr1 + 2, 3 * sizeof(*arr1));
 	printf("%s%s%s", GREEN, "------------------- TEST 4 ------------------\n", DEFAULT);
@@ -77,8 +84,10 @@ int	main(int argc, char *argv[])
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[KO]\n", DEFAULT);
-
-	index =0;
+	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	sleep(1);
+// TEST 5
+	index = 0;
 	ptr_arr0 = memmove(arr0, arr0 + 2, 1);
 	ptr_arr1 = ft_memmove(arr1, arr1 + 2, 1);
 	printf("%s%s%s", GREEN, "------------------- TEST 5 -------------------\n", DEFAULT);
@@ -93,6 +102,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	sleep(1);
 	printf("%s%s%s", BLUE, "------------------- FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

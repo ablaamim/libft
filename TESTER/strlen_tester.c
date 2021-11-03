@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:38:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/01 15:17:50 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/03 19:21:24 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 int	main(int argc, char *argv[])
 {
@@ -39,6 +40,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
 	printf("%s%s%s", BLUE, "-------------------- FINISH ------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

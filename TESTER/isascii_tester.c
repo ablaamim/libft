@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:27:51 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/01 14:46:40 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/03 19:15:09 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int	main(int argc, char *argv[])
 {
@@ -43,7 +44,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
-
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
 // TEST 2
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
@@ -55,7 +57,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
-
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
 // TEST 3
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
@@ -67,7 +70,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN , "[OK]\n", DEFAULT);
 		index++;
 	}
-
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
 // TEST 4
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 4 -------------------\n", DEFAULT);
@@ -79,7 +83,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
-
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
 // TEST 5
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 5 -------------------\n", DEFAULT);
@@ -92,6 +97,7 @@ int	main(int argc, char *argv[])
 		index++;
 	}
 	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	sleep(1);
 	printf("%s%s%s", BLUE, "------------------- FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 17:16:19 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/01 18:07:26 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/02 16:11:43 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
 
-	if (src == NULL && dst == NULL)
+	if (src == NULL || dst == NULL)
 		return (NULL);
 	if (dst > src)
 	{
