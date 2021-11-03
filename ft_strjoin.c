@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 05:22:11 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/03 21:32:08 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/03 23:38:04 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/03 23:38:06 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned char	ch;
-	unsigned char	*str;
-	size_t			i;
+	char	*ccat;
+	int		len_s1;
+	int		len_s2;
 
-	ch = (unsigned char)c;
-	str = (unsigned char *)s;
-	i = 0;
-	while (i < n)
-	{
-		if (str[i] == ch)
-			return ((void *)(&str[i]));
-		i++;
-	}
-	return (NULL);
+	if (!s1 || !s2)
+		return (NULL);
+	len_s1 = (ft_strlen((char *)s1));
+	len_s2 = (ft_strlen((char *)s2));
+	ccat = (char *)malloc((len_s1 + len_s2 + 1) * sizeof(char));
+	if (ccat == NULL)
+		return (NULL);
+	ft_strlcpy(&ccat[0], s1, len_s1 + 1);
+	ft_strlcpy(&ccat[len_s1], s2, len_s2 + 1);
+	return (ccat);
 }

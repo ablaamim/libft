@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 05:22:11 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/03 21:32:08 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/03 23:49:58 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/03 23:49:59 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned char	ch;
-	unsigned char	*str;
-	size_t			i;
+	size_t	i;
+	size_t	j;
 
-	ch = (unsigned char)c;
-	str = (unsigned char *)s;
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
-	while (i < n)
-	{
-		if (str[i] == ch)
-			return ((void *)(&str[i]));
+	while (ft_strchr(set, s1[i]) && s1[i] != '\0')
 		i++;
-	}
-	return (NULL);
+	j = ft_strlen((char *)s1);
+	while (ft_strchr(set, s1[j]) && j != 0)
+		j--;
+	if ((int)(j - i + 1) <= 0)
+		return (ft_calloc(1, 1));
+	return (ft_substr(s1, i, (j - i + 1)));
 }
