@@ -6,13 +6,14 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 08:39:01 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/02 08:40:05 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/03 21:03:07 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include <stdio.h>
 #include <strings.h>
+#include <unistd.h>
 
 int	main(void)
 {
@@ -24,7 +25,13 @@ int	main(void)
 	int		arr1[5] = {1, 2, 3, 4, 5};
 	int		index;
 
-	printf("%s%s%s", GREEN, "\t TESTING YOUR BZERO FUNCTION : \n", DEFAULT);
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t TESTING YOUR BZERO FUNCTION : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+
+// TEST 1
+	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
 	index = 0;
 	bzero(str0, 13);
 	ft_bzero(str1, 13);
@@ -35,11 +42,14 @@ int	main(void)
 		++index;
 	}
 	if (index == 13)
-		printf("\033[92mTest %2.i - OK \033[0m\n", 1);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", 1);
-
-	index =0;
+		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
+// TEST 2
+	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
+	index = 0;
 	bzero(str2, 1);
 	ft_bzero(str3, 1);
 	while (index < 1)
@@ -49,25 +59,28 @@ int	main(void)
 		++index;
 	}
 	if (index == 1)
-		printf("\033[92mTest %2.i - OK \033[0m\n", 2);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", 2);
-	
-	index =0;
+		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
+// TEST 3
+	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
+	index = 0;
 	bzero(arr0, 4 * sizeof(*arr0));
 	ft_bzero(arr1, 4 * sizeof(*arr1));
 	while (index < 5)
 	{
-		// printf("arr0[%d] -> %d\narr1[%d] -> %d\n", \
-		// 		index, arr0[index], \
-		// 		index, arr1[index]);
 		if (arr0[index] != arr1[index])
 			break ;
 		++index;
 	}
 	if (index == 5)
-		printf("\033[92mTest %2.i - OK \033[0m\n", 3);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", 3);
-	return (0);
+		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
+	printf("%s%s%s", BLUE, "----------------- FINISH ---------------------\n", DEFAULT);
+	return (EXIT_SUCCESS);
 }
