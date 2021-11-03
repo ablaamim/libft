@@ -103,11 +103,11 @@ Part I :
 | • [tolower()](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | NONE	   | int	ft_tolower(int c) |  Convert char to lowercase. | <ctype.h> |
 | • [strchr()](https://github.com/ablaamim/libft/blob/main/ft_strchr.c)   | NONE   	   | char	*ft_strchr(const char *s, int c)  |  Locate character in string (first occurrence). | <string.h> |
 | • [strrchr()](https://github.com/ablaamim/libft/blob/main/ft_strrchr.c) | NONE	   | char	*ft_strrchr(const char *s, int c) |  Locate character in string (last occurrence).  | <string.h> |
-| • [strncmp()]()  | NONE	  |  | Compare n bytes of two strings.  | <string.h> |
-| • [memchr()]()   | NONE	  |  | Scan memory for a character. | <string.h> |
-| • [memcmp()]()   | NONE	  |  | Compare memory areas.  | <string.h> |
-| • [strnstr()]()  | NONE	  |  | Locate a substring in a string.  | <string.h> |
-| • [atoi()]()     | NONE	  |  int	ft_atoi(const char *s)  |  | <stdlib.h> |
+| • [strncmp()](https://github.com/ablaamim/libft/blob/main/ft_strncmp.c)  | NONE	  |   | Compare n bytes of two strings.  | <string.h> |
+| • [memchr()](https://github.com/ablaamim/libft/blob/main/ft_memchr.c)   | NONE	  |  | Scan memory for a character. | <string.h> |
+| • [memcmp()](https://github.com/ablaamim/libft/blob/main/ft_memcmp.c)   | NONE	  |  | Compare memory areas.  | <string.h> |
+| • [strnstr()](https://github.com/ablaamim/libft/blob/main/ft_strnstr.c)  | NONE	  |  | Locate a substring in a string.  | <string.h> |
+| • [atoi()](https://github.com/ablaamim/libft/blob/main/ft_atoi.c)     | NONE	  |  int	ft_atoi(const char *s)  |  | <stdlib.h> |
 
 ---
 
@@ -135,6 +135,7 @@ Part I :
 |     | • [strlcat](https://github.com/ablaamim/libft/blob/main/ft_strlcpy.c) | [man](https://www.mkssoftware.com/docs/man3/strlcat.3.asp)  |
 |     | • [toupper](https://github.com/ablaamim/libft/blob/main/ft_toupper.c) | [man](https://man7.org/linux/man-pages/man3/toupper.3.html) |
 |     | • [tolower](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | [man](https://linux.die.net/man/3/tolower) |
+|	  | 
 
 ---
 
