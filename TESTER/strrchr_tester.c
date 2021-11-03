@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 14:58:21 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/22 15:07:04 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/03 21:38:28 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ int	main(int argc, char *argv[])
 	char	my_test_list[10] = { 'a', 'A', '9', 'z', '%', '\n', '\0', '0', 'Z', '\r'};
 	char	str[13] = {"Hello world!"};
 
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t TESTING YOUR STRRCHR FUNCTION :\n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
 	index = 0;
 	printf("%s%s%s", GREEN, "-------------------- TESTS ------------------\n", DEFAULT);
 	while (index < 10)
@@ -37,6 +42,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 		++index;
 	}
-	printf("%s%s%s", GREEN, "------------------- FINISH ------------------\n", DEFAULT);
-	return (0);
+	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	sleep(1);
+	printf("%s%s%s", BLUE, "------------------- FINISH ------------------\n", DEFAULT);
+	return (EXIT_SUCCESS);
 }
