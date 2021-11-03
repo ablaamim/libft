@@ -6,13 +6,14 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 08:06:29 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/02 08:21:30 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/03 21:48:21 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 int	main(int argc, char **argv)
 {
@@ -38,6 +39,8 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_str0);
 	free(ret_str1);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	sleep(1);
 // TEST 2
 	printf("%s%s%s", GREEN, "------------------- TEST 2 ------------------\n", DEFAULT);
 	ret_str0 = strdup(str1);
@@ -49,6 +52,7 @@ int	main(int argc, char **argv)
 	free(ret_str0);
 	free(ret_str1);
 	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	sleep(1);
 	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
