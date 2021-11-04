@@ -103,10 +103,10 @@ Part I :
 | • [tolower()](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | NONE	   | int	ft_tolower(int c) |  Convert char to lowercase. | <ctype.h> |
 | • [strchr()](https://github.com/ablaamim/libft/blob/main/ft_strchr.c)   | NONE   	   | char	*ft_strchr(const char *s, int c)  |  Locate character in string (first occurrence). | <string.h> |
 | • [strrchr()](https://github.com/ablaamim/libft/blob/main/ft_strrchr.c) | NONE	   | char	*ft_strrchr(const char *s, int c) |  Locate character in string (last occurrence).  | <string.h> |
-| • [strncmp()](https://github.com/ablaamim/libft/blob/main/ft_strncmp.c)  | NONE	  |   | Compare n bytes of two strings.  | <string.h> |
-| • [memchr()](https://github.com/ablaamim/libft/blob/main/ft_memchr.c)   | NONE	  |  | Scan memory for a character. | <string.h> |
-| • [memcmp()](https://github.com/ablaamim/libft/blob/main/ft_memcmp.c)   | NONE	  |  | Compare memory areas.  | <string.h> |
-| • [strnstr()](https://github.com/ablaamim/libft/blob/main/ft_strnstr.c)  | NONE	  |  | Locate a substring in a string.  | <string.h> |
+| • [strncmp()](https://github.com/ablaamim/libft/blob/main/ft_strncmp.c)  | NONE	  | int	ft_strncmp(const char *s1, const char *s2, size_t n)  | Compare n bytes of two strings.  | <string.h> |
+| • [memchr()](https://github.com/ablaamim/libft/blob/main/ft_memchr.c)   | NONE	  | void	*ft_memchr(const void *s, int c, size_t n) | Scan memory for a character. | <string.h> |
+| • [memcmp()](https://github.com/ablaamim/libft/blob/main/ft_memcmp.c)   | NONE	  | int	ft_memcmp(const void *s1, const void *s2, size_t n) | Compare memory areas.  | <string.h> |
+| • [strnstr()](https://github.com/ablaamim/libft/blob/main/ft_strnstr.c)  | NONE	  | char	*ft_strnstr(const char	*haystack, const char	*needle, size_t	len) | Locate a substring in a string.  | <string.h> |
 | • [atoi()](https://github.com/ablaamim/libft/blob/main/ft_atoi.c)     | NONE	  |  int	ft_atoi(const char *s)  |  | <stdlib.h> |
 
 ---
