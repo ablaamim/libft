@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 11:14:46 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/04 12:23:37 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,9 @@
 #include <stdbool.h>
 #include <string.h>
 
-int orginal_crash;
-int ft_crash;
 pid_t pid;
 bool has_segfault_ft;
 bool has_segfault_org;
-int a;
 
 # define TEST_SEGFAULT(x,y) do { \
 	if ((pid = fork()) < 0) \

@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 21:48:53 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 12:04:06 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/04 12:24:07 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,9 @@
 #include <stdbool.h>
 #include <string.h>
 
-int orginal_crash;
-int ft_crash;
 pid_t pid;
 bool has_segfault_ft;
 bool has_segfault_org;
-int a;
 
 # define TEST_SEGFAULT(x,y) do { \
 	if ((pid = fork()) < 0) \
@@ -47,7 +44,6 @@ int a;
 			write(1,") ",2);}\
 		else\
 			write(1,"\033[32m[OK]\033[0m ",13);\
-
 
 int	main(int argc, char **argv)
 {
@@ -74,11 +70,12 @@ int	main(int argc, char **argv)
 	TESTER(memchr(NULL,0,1);)
 	sleep(1);
 	TESTER(memchr("NULL",0,0);)
+	sleep(1);
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	sleep(1);
 //TEST 1
-	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "----------------- TEST 1 --------------------\n", DEFAULT);
 	ptr_str0 = memchr(str0, 'l', 2);
 	ptr_str1 = ft_memchr(str0, 'l', 2);
 	if (ptr_str0 == ptr_str1)
@@ -126,7 +123,7 @@ int	main(int argc, char **argv)
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	sleep(1);
 // TEST  5
-	printf("%s%s%s", GREEN, "---------------- TEST 5 ---------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "----------------- TEST 5 --------------------\n", DEFAULT);
 	ptr_arr0 = memchr(arr0, 5, 40 * (sizeof(*arr0)));
 	ptr_arr1 = ft_memchr(arr0, 5, 40 * (sizeof(*arr0)));
 	if (ptr_arr0 == ptr_arr1)
