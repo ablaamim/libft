@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 12:23:37 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/04 16:52:17 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ bool has_segfault_org;
 	TEST_SEGFAULT(f,has_segfault_org)\
 	TEST_SEGFAULT(ft_##f,has_segfault_ft)\
 		if(!has_segfault_org && has_segfault_ft){\
-			write(1,"\033[31mKO \033[0m(",13);\
+			write(1,"\033[31m[KO]\n\033[0m(",13);\
 			write(1,#f,strlen(#f));\
 			write(1,") ",2);}\
 		else\
-			write(1,"\033[32mOK\033[0m ",13);\
+			write(1,"\033[32m[OK]\n\033[0m ",13);\
 
 int	main(int argc, char *argv[])
 {
@@ -83,7 +83,7 @@ int	main(int argc, char *argv[])
 	sleep(1);
 	TESTER(memcpy(NULL,"NULL",1);)
 	sleep(1);
-	TESTER(memcpy("NULL","NULL",1);) // BUS_ERROR "COULD BE AN UNDEFINED BEHAVIOR" ! STILL LOOKING
+	TESTER(memcpy("NULL","NULL",1);) // ROM CASE
 	sleep(1);
 	TESTER(memcpy("NULLO",NULL,3);)
 	sleep(1);
@@ -93,6 +93,7 @@ int	main(int argc, char *argv[])
 	sleep(1);
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+
 // TEST 1
 	memcpy(twenty, ten_a, 1);
 	ft_memcpy(ft_twenty, ten_a, 1);
@@ -111,6 +112,7 @@ int	main(int argc, char *argv[])
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	sleep(1);
+
 // TEST 2
 	memcpy(twenty2, thirty_a, 19);
 	ft_memcpy(ft_twenty2, thirty_a, 19);
@@ -129,6 +131,7 @@ int	main(int argc, char *argv[])
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	sleep(1);
+
 // TEST 3
 	memcpy(twenty3, thirty_a, 0);
 	ft_memcpy(ft_twenty3, thirty_a, 0);
@@ -147,6 +150,7 @@ int	main(int argc, char *argv[])
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	sleep(1);
+
 // TEST 4
 	memcpy(twenty, ten_a, 20);
 	ft_memcpy(ft_twenty, ten_a, 20);
