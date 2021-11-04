@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/03 20:51:49 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/04 10:00:54 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,39 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stddef.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <string.h>
+
+int orginal_crash;
+int ft_crash;
+pid_t pid;
+bool has_segfault_ft;
+bool has_segfault_org;
+int a;
+
+# define TEST_SEGFAULT(x,y) do { \
+	if ((pid = fork()) < 0) \
+		exit(EXIT_FAILURE); \
+	if (pid == 0) { \
+		do { x } while(0); \
+		exit(EXIT_SUCCESS); \
+	} else { \
+		wait(&pid); \
+		y = WIFSIGNALED(pid); \
+	} \
+} while(0);
+
+#define TESTER(f) \
+	TEST_SEGFAULT(f,has_segfault_org)\
+	TEST_SEGFAULT(ft_##f,has_segfault_ft)\
+		if(!has_segfault_org && has_segfault_ft){\
+			write(1,"\033[31mKO \033[0m(",13);\
+			write(1,#f,strlen(#f));\
+			write(1,") ",2);}\
+		else\
+			write(1,"\033[32mOK\033[0m ",13);\
 
 int	main(int argc, char *argv[])
 {
@@ -37,6 +70,32 @@ int	main(int argc, char *argv[])
 	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
 	/**************************************************************************/
 
+// SEGFAULT TEST
+	printf("%s%s%s", GREEN, "-------------- SEGFAULT TESTS : -------------\n", DEFAULT);
+	TESTER(memcpy(NULL,NULL,0);)
+	sleep(1);
+	TESTER(memcpy("NULL",NULL,0);)
+	sleep(1);
+	TESTER(memcpy(NULL,"NULL",0);)
+	sleep(1);
+	TESTER(memcpy("NULL","NULL",0);)
+	sleep(1);
+	TESTER(memcpy(NULL,NULL,1);)
+	sleep(1);
+	TESTER(memcpy("NULL",NULL,1);)
+	sleep(1);
+	TESTER(memcpy(NULL,"NULL",1);)
+	sleep(1);
+	TESTER(memcpy("NULL","NULL",1);)
+	sleep(1);
+	TESTER(memcpy("NULLO",NULL,3);)
+	sleep(1);
+	TESTER(memcpy(NULL,"NULLO",3);)
+	sleep(1);
+	TESTER(memcpy("NULLO","NULL",3);)
+	sleep(1);
+	printf("\n");
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 // TEST 1
 	memcpy(twenty, ten_a, 1);
 	ft_memcpy(ft_twenty, ten_a, 1);

@@ -6,11 +6,11 @@
 #    By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 19:39:18 by ablaamim          #+#    #+#              #
-#    Updated: 2021/11/03 19:40:02 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/11/04 07:44:42 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= libft.a 
+NAME		= libft.a
 
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
