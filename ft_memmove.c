@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 17:16:19 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 09:59:03 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/04 11:18:11 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*my_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	if ((dst == NULL) || (src == NULL))
 		return (NULL);
+	if (dst == src)
+		return (dst);
 	dstc = (unsigned char *) dst;
 	srcc = (unsigned char *) src;
 	while (i < n)

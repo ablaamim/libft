@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:08:43 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 09:44:02 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/04 11:21:25 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ int	main(int argc, char *argv[])
 	sleep(1);
 	TESTER(memmove(NULL, "NULL", 1);)
 	sleep(1);
-	TESTER(memmove("NULL", "NULL", 1);) // SEGFAULT
+	TESTER(memmove("NULL", "NULL", 1);)
 	TESTER(memmove("NULLO", NULL, 3);)
 	sleep(1);
 	TESTER(memmove(NULL, "NULLO", 3);)
@@ -142,7 +142,7 @@ int	main(int argc, char *argv[])
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[KO]\n", DEFAULT);
-	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	sleep(1);
 // TEST 5
 	index = 0;

@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 10:00:54 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/04 11:14:46 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ int	main(int argc, char *argv[])
 	sleep(1);
 	TESTER(memcpy(NULL,"NULL",1);)
 	sleep(1);
-	TESTER(memcpy("NULL","NULL",1);)
+	TESTER(memcpy("NULL","NULL",1);) // BUS_ERROR "COULD BE AN UNDEFINED BEHAVIOR" ! STILL LOOKING
 	sleep(1);
 	TESTER(memcpy("NULLO",NULL,3);)
 	sleep(1);
