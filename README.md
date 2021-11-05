@@ -146,7 +146,7 @@ Part I :
 |  Function    | Allowed function  | Prototype | Description | Manual  |
 |---           |---                |---	       |---          |---      |
 | •[strdup](https://github.com/ablaamim/libft/blob/main/ft_strdup.c)   |  malloc()         | char	*ft_strdup(const char *s)  | Duplicate a string. |  [man](https://man7.org/linux/man-pages/man3/strdup.3.html) |
-| • [calloc](https://github.com/ablaamim/libft/blob/main/ft_calloc.c)   |  malloc()         |       | Allocate memory by filling it with zeros. | [man](https://linux.die.net/man/3/calloc) |
+| • [calloc](https://github.com/ablaamim/libft/blob/main/ft_calloc.c)   |  malloc()         |    void	*ft_calloc(size_t count, size_t size);   | Allocate memory by filling it with zeros. | [man](https://linux.die.net/man/3/calloc) |
 
 ---
 
