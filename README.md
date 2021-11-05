@@ -145,8 +145,8 @@ Part I :
 
 |  Function    | Allowed function  | Prototype | Description | Manual  |
 |---           |---                |---	       |---          |---      |
-| • strdup()   |  malloc()         | char	*ft_strdup(const char *s)  | Duplicate a string. |  [man](https://man7.org/linux/man-pages/man3/strdup.3.html) |
-| • calloc()   |  malloc()         |       | Allocate memory by filling it with zeros. |         |
+| •[strdup](https://github.com/ablaamim/libft/blob/main/ft_strdup.c)   |  malloc()         | char	*ft_strdup(const char *s)  | Duplicate a string. |  [man](https://man7.org/linux/man-pages/man3/strdup.3.html) |
+| • [calloc](https://github.com/ablaamim/libft/blob/main/ft_calloc.c)   |  malloc()         |       | Allocate memory by filling it with zeros. | [man](https://linux.die.net/man/3/calloc) |
 
 ---
 
@@ -172,17 +172,19 @@ Part II :
 
 <p align=center>
 
-- ft_substr	- returns a substring from a string
-- ft_strjoin.c	- concatenates two strings
-- ft_strtrim.c	- trims the beginning and end of string with specific set of chars
-- ft_split.c	- splits a string using a char as parameter
-- ft_itoa.c	- converts a number into a string
-- ft_strmapi.c	- applies a function to each character of a string
-- ft_striteri.c	- applies a function to each character of a string
-- ft_putchar_fd.c	- output a char to a file descriptor
-- ft_putstr_fd.c	- output a string to a file descriptor
-- ft_putendl_fd.c	- output a string to a file descriptor, followed by a new line
-- ft_putnbr_fd.c	- output a number to a file descriptor
+| FUNCTION | BEHAVIOR |
+|--- |--- |
+| - ft_substr | - returns a substring from a string |
+| - ft_strjoin.c | - concatenates two strings |
+| - ft_strtrim.c | - trims the beginning and end of string with specific set of chars |
+| - ft_split.c | - splits a string using a char as parameter |
+| - ft_itoa.c | - converts a number into a string |
+| - ft_strmapi.c | - applies a function to each character of a string |
+| - ft_striteri.c | - applies a function to each character of a string |
+| - ft_putchar_fd.c | - output a char to a file descriptor |
+| - ft_putstr_fd.c | - output a string to a file descriptor |
+| - ft_putendl_fd.c | - output a string to a file descriptor, followed by a new line |
+| - ft_putnbr_fd.c | - output a number to a file descriptor |
 
 </p>
 
@@ -198,14 +200,16 @@ Part II :
 > <i>The following functions will allow you to easily use your lists.</i>
 <p align=center>
 
-- ft_lstnew	- creates a new list element
-- ft_lstadd_front	- adds an element at the beginning of a list
-- ft_lstsize	- counts the number of elements in a list
-- ft_lstlast	- returns the last element of the list
-- ft_lstadd_back	- adds an element at the end of a list
-- ft_lstclear	- deletes and free list
-- ft_lstiter	- applies a function to each element of a list
-- ft_lstmap	- applies a function to each element of a list
+| FUNCTION | BEHAVIOR |
+|--- |--- |
+| - ft_lstnew | - creates a new list element |
+| - ft_lstadd_front | - adds an element at the beginning of a list |
+| - ft_lstsize | - counts the number of elements in a list |
+| - ft_lstlast | - returns the last element of the list |
+| - ft_lstadd_back | - adds an element at the end of a list |
+| - ft_lstclear | - deletes and free list |
+| - ft_lstiter | - applies a function to each element of a list |
+| - ft_lstmap | - applies a function to each element of a list |
 
 </p>
 
