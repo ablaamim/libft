@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   test_ft_strnstr.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/05 16:09:26 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/05 16:13:32 by ablaamim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
 #include "../libft.h"
 #include <stdio.h>
 #include <ctype.h>
@@ -9,47 +22,48 @@ int	main(void)
 	char	*ret_ft_strnstr;
 	char	str0[] = {"Hello world!"};
 	char	str1[] = {"world"};
-	char	str2[] = {"42 São Paulo"};
+	char	str2[] = {"1337 BENGUERRIR"};
 	char	str3[] = {"help"};
-
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\tTESTING YOUR STRNSTR FUNCTION : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
+// TEST 1
 	ret_strnstr = strnstr(str0, str1, 5);
 	ret_ft_strnstr = ft_strnstr(str0, str1, 5);
-//	printf("ret_strnstr -> %s\nret_ft_strncmp -> %s\n", ret_strnstr, ret_ft_strnstr);
 	if (ret_strnstr == ret_ft_strnstr)
 		printf("\033[92mTest %2.i - OK \033[0m\n", 1);
 	else
 		printf("\033[91mTest %2.i - KO \033[0m\n", 1);
-
+// TEST 2
 	ret_strnstr = strnstr(str0, str1, 13);
 	ret_ft_strnstr = ft_strnstr(str0, str1, 13);
-//	printf("ret_strnstr -> %s\nret_ft_strncmp -> %s\n", ret_strnstr, ret_ft_strnstr);
 	if (ret_strnstr == ret_ft_strnstr)
 		printf("\033[92mTest %2.i - OK \033[0m\n", 2);
 	else
 		printf("\033[91mTest %2.i - KO \033[0m\n", 2);
-
+// TEST 3
 	ret_strnstr = strnstr(str2, str3, 0);
 	ret_ft_strnstr = ft_strnstr(str2, str3, 0);
-//	printf("ret_strnstr -> %s\nret_ft_strncmp -> %s\n", ret_strnstr, ret_ft_strnstr);
 	if (ret_strnstr == ret_ft_strnstr)
 		printf("\033[92mTest %2.i - OK \033[0m\n", 3);
 	else
 		printf("\033[91mTest %2.i - KO \033[0m\n", 3);
-
+// TEST 3
 	ret_strnstr = strnstr(str2, str3, 100);
 	ret_ft_strnstr = ft_strnstr(str2, str3, 100);
-//	printf("ret_strnstr -> %s\nret_ft_strncmp -> %s\n", ret_strnstr, ret_ft_strnstr);
 	if (ret_strnstr == ret_ft_strnstr)
 		printf("\033[92mTest %2.i - OK \033[0m\n", 4);
 	else
 		printf("\033[91mTest %2.i - KO \033[0m\n", 4);
-
+// TEST 4
 	ret_strnstr = strnstr(str0, str1, -5);
 	ret_ft_strnstr = ft_strnstr(str0, str1, -5);
-//	printf("ret_strnstr -> %s\nret_ft_strncmp -> %s\n", ret_strnstr, ret_ft_strnstr);
 	if (ret_strnstr == ret_ft_strnstr)
 		printf("\033[92mTest %2.i - OK \033[0m\n", 5);
 	else
 		printf("\033[91mTest %2.i - KO \033[0m\n", 5);
-	return (0);
+	printf("%s%s%s", BLUE, "---------------- FINISH ----------------------\n", DEFAULT);
+	return (EXIT_SUCCESS);
 }

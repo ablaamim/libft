@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 14:40:15 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/22 14:45:45 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/05 16:03:22 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (*s == (char) c)
 			return ((char *) s);
-		++s;
+		s++;
 	}
 	if (*s == (char) c)
 		return ((char *) s);
