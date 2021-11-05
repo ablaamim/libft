@@ -103,7 +103,7 @@ Part I :
 | • [tolower()](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | NONE	   | int	ft_tolower(int c) |  Convert char to lowercase. | <ctype.h> |
 | • [strchr()](https://github.com/ablaamim/libft/blob/main/ft_strchr.c)   | NONE   	   | char	*ft_strchr(const char *s, int c)  |  Locate character in string (first occurrence). | <string.h> |
 | • [strrchr()](https://github.com/ablaamim/libft/blob/main/ft_strrchr.c) | NONE	   | char	*ft_strrchr(const char *s, int c) |  Locate character in string (last occurrence).  | <string.h> |
-| • [strncmp()](https://github.com/ablaamim/libft/blob/main/ft_strncmp.c)  | NONE	  | int	ft_strncmp(const char *s1, const char *s2, size_t n)  | Compare n bytes of two strings.  | <string.h> |
+|https://man7.org/linux/man-pages/man3/strchr.3.html | NONE	  | int	ft_strncmp(const char *s1, const char *s2, size_t n)  | Compare n bytes of two strings.  | <string.h> |
 | • [memchr()](https://github.com/ablaamim/libft/blob/main/ft_memchr.c)   | NONE	  | void	*ft_memchr(const void *s, int c, size_t n) | Scan memory for a character. | <string.h> |
 | • [memcmp()](https://github.com/ablaamim/libft/blob/main/ft_memcmp.c)   | NONE	  | int	ft_memcmp(const void *s1, const void *s2, size_t n) | Compare memory areas.  | <string.h> |
 | • [strnstr()](https://github.com/ablaamim/libft/blob/main/ft_strnstr.c)  | NONE	  | char	*ft_strnstr(const char	*haystack, const char	*needle, size_t	len) | Locate a substring in a string.  | <string.h> |
@@ -135,7 +135,12 @@ Part I :
 |     | • [strlcat](https://github.com/ablaamim/libft/blob/main/ft_strlcpy.c) | [man](https://www.mkssoftware.com/docs/man3/strlcat.3.asp)  |
 |     | • [toupper](https://github.com/ablaamim/libft/blob/main/ft_toupper.c) | [man](https://man7.org/linux/man-pages/man3/toupper.3.html) |
 |     | • [tolower](https://github.com/ablaamim/libft/blob/main/ft_tolower.c) | [man](https://linux.die.net/man/3/tolower) |
-|	  | 
+|     | • [strchr](https://github.com/ablaamim/libft/blob/main/ft_strchr.c) | [man](https://man7.org/linux/man-pages/man3/strchr.3.html) |
+|     | • [strncmp()](https://github.com/ablaamim/libft/blob/main/ft_strncmp.c) | [man]() |
+|     | • [memchr()](https://github.com/ablaamim/libft/blob/main/ft_memchr.c) | [man]() |
+|     | • [memcmp()](https://github.com/ablaamim/libft/blob/main/ft_memcmp.c) | [man]() |
+|     | • [strnstr()](https://github.com/ablaamim/libft/blob/main/ft_strnstr.c) | [man]() |
+|     | • [atoi()](https://github.com/ablaamim/libft/blob/main/ft_atoi.c) | [man]() |
 
 ---
 
