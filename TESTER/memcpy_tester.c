@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 11:47:52 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 18:58:44 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ int	main(int argc, char *argv[])
 	sleep(1);
 	TESTER(memcpy(NULL,"NULL",1);)
 	sleep(1);
-	TESTER(memcpy("NULL","NULL",1);) // ROM CASE
+	TESTER(memcpy("NULL","NULL",1);)
 	sleep(1);
 	TESTER(memcpy("NULLO",NULL,3);)
 	sleep(1);
