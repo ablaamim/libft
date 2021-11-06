@@ -6,13 +6,12 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:49:58 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 16:05:16 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 08:58:19 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s);
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;

@@ -6,11 +6,12 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:41:47 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 18:18:20 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 11:41:37 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_createsplit(char **result, char const *s, char c);
 size_t	ft_addpart(char **result, const char *prev, size_t size, char c);
 size_t	ft_count(const char *s, char c);

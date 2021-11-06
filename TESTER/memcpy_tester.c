@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 16:52:17 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 11:47:52 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 #include <stdbool.h>
 #include <string.h>
 
-pid_t pid;
-bool has_segfault_ft;
-bool has_segfault_org;
+pid_t	pid;
+bool	has_segfault_ft;
+bool	has_segfault_org;
 
 # define TEST_SEGFAULT(x,y) do { \
 	if ((pid = fork()) < 0) \
@@ -50,16 +50,16 @@ int	main(int argc, char *argv[])
 {
 	(void)	argc;
 	(void)	argv;
-	char twenty[20] = "0000000000000000000\0";
-	char ft_twenty[20] = "0000000000000000000\0";
-	char twenty2[20] = "0000000000000000000\0";
-	char ft_twenty2[20] = "0000000000000000000\0";
-	char twenty3[20] = "0000000000000000000\0";
-	char ft_twenty3[20] = "0000000000000000000\0";
-	char empty[2] = "";
-	char ft_empty[2] = "";
-	char *thirty_a = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\0";
-	char *ten_a = "aaaaaaaaaa\0";
+	char	twenty[20] = "0000000000000000000\0";
+	char	ft_twenty[20] = "0000000000000000000\0";
+	char	twenty2[20] = "0000000000000000000\0";
+	char	ft_twenty2[20] = "0000000000000000000\0";
+	char	twenty3[20] = "0000000000000000000\0";
+	char	ft_twenty3[20] = "0000000000000000000\0";
+	char	empty[2] = "";
+	char	ft_empty[2] = "";
+	char	*thirty_a = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\0";
+	char	*ten_a = "aaaaaaaaaa\0";
 
 	/**************************************************************************/
 	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);

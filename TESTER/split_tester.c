@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   test_ft_split.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/06 07:55:06 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/06 08:36:48 by ablaamim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../libft.h"
 #include <stdio.h>
 
-int	main(void)
+int	main(int argc, char **argv)
 {
 	char	str[] = "abc    .         def ghi jkl";
 	char	str_null[4] = "";
@@ -96,10 +108,5 @@ int	main(void)
 	}
 	printf("\033[92m-----------------------\033[0m\n\n");
 	free(ret_str);
-	return (0);
+	return (EXIT_SUCCESS);
 }
-	// if (1)
-	// 	printf("\033[92mTest %2.i - OK \033[0m\n", 1);
-	// else
-	// 	printf("\033[91mTest %2.i - KO \033[0m\n", 1);
-	// free(ret_str);

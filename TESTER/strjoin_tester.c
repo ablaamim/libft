@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 15:42:47 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 16:02:39 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 07:54:44 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	main(int argc, char **argv)
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	sleep(1);
 // TEST 4
-	printf("%s%s%s", GREEN, "----------------- TEST 4 ---------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "----------------- TEST 4 --------------------\n", DEFAULT);
 	ret_ft_strjoin = ft_strjoin("", "");
 	if (!strcmp("", ret_ft_strjoin))
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
@@ -73,7 +73,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[OK]\n", DEFAULT);
 	free(ret_ft_strjoin);
-	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
-	printf("%s%s%s", BLUE, "----------------- FINISH ---------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------- FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

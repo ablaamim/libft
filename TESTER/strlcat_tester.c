@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 11:13:57 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 15:28:03 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 08:34:13 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ bool has_segfault_org;
         y = WIFSIGNALED(pid); \
     } \
 } while(0);
-/********************************/
+
 #define TESTER(f) \
     TEST_SEGFAULT(f,has_segfault_org)\
     TEST_SEGFAULT(ft_##f,has_segfault_ft)\

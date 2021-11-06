@@ -6,10 +6,9 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:22:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 12:23:24 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 10:19:54 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../libft.h"
 #include <stdlib.h>
@@ -45,7 +44,6 @@ bool has_segfault_org;
             write(1,") ",2);}\
         else\
             write(1,"\033[32m[OK]\033[0m ",13);\
-
 
 int	ft_strcmp(char *s1, char *s2)
 {

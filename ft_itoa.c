@@ -6,11 +6,12 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:43:35 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 10:58:39 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 11:41:55 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int		ft_countsize(long int n);
 void	ft_convbase(long int n, char *number, long int i);
 
@@ -21,7 +22,7 @@ char	*ft_itoa(int n)
 
 	len = ft_countsize(n);
 	number = (char *)malloc((len + 1) * sizeof(char));
-	if (!number)
+	if (number == NULL)
 		return (NULL);
 	number[len--] = '\0';
 	ft_convbase(n, number, len);
