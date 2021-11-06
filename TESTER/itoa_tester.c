@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 17:19:36 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 10:57:52 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/06 18:29:28 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,23 +25,24 @@ int	main(int argc, char **argv)
 	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
 	ret_itoa = ft_itoa(-2147483648);
 	if (!strcmp(ret_itoa, "-2147483648"))
-		printf("\033[92mTest %2.i - OK \033[0m\n", 1);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", 1);
+		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_itoa);
-	printf("%s%s%s", GREEN, "----------------- TEST 2 --------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 //TEST 2
-	printf("%s%s%s")
+	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	ret_itoa = ft_itoa(2147483647);
 	if (!strcmp(ret_itoa, "2147483647"))
-		printf("\033[92mTest %2.i - OK \033[0m\n", 2);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", 2);
+		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_itoa);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 //TEST 3
 	ret_itoa = ft_itoa(0);
 	if (!strcmp(ret_itoa, "0"))
-		printf("\033[92mTest %2.i - OK \033[0m\n", 3);
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	else
 		printf("\033[91mTest %2.i - KO \033[0m\n", 3);
 	free(ret_itoa);
