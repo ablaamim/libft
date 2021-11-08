@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:05:17 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 19:28:18 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/08 20:24:14 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,27 +65,27 @@ int	main(int argc, char **argv)
 // SEGFAULT TESTS :
 	printf("%s%s%s", GREEN, "-------------- SEGFAULT TESTS ---------------\n", DEFAULT);
 	TESTER(memcmp(NULL,NULL,0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp("NULL",NULL,0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp(NULL,"NULL",0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp("NULL","NULL",0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp(NULL,NULL,1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp("NULL",NULL,1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp(NULL,"NULL",1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp("NULL","NULL",1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp("NULLO",NULL,3);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp(NULL,"NULLO",3);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcmp("NULLO","NULL",3);)
-	sleep(1);
+	usleep(250000);
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 // TEST 1
@@ -97,7 +97,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 	printf("%s%s%s", GREEN, "----------------- TEST 2 --------------------\n", DEFAULT);
 	ret_memcmp = memcmp(str0, str1, 13);
@@ -107,7 +107,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 3
 	printf("%s%s%s", GREEN, "----------------- TEST 3 --------------------\n", DEFAULT);
 	ret_memcmp = memcmp(str2, str3, 0);
@@ -117,7 +117,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 4
 	printf("%s%s%s", GREEN, "----------------- TEST 4 --------------------\n", DEFAULT);
 	ret_memcmp = memcmp(str2, str3, 100);
@@ -127,7 +127,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 5
 	printf("%s%s%s", GREEN, "----------------- TEST 5 --------------------\n", DEFAULT);
 	ret_memcmp = memcmp(str0, str1, -5);
@@ -137,7 +137,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "----------------- FINISH ---------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

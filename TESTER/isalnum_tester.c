@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 11:35:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/01 14:44:44 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/08 19:53:46 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	usleep(250000);
 // TEST 2
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
@@ -67,6 +69,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 		index++;
 	}
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	usleep(250000);
 // TEST 3
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);

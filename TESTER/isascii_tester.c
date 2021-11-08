@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:27:51 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 10:59:24 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/08 19:55:10 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	main(int argc, char *argv[])
 		index++;
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
@@ -58,7 +58,7 @@ int	main(int argc, char *argv[])
 		index++;
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 3
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
@@ -71,7 +71,7 @@ int	main(int argc, char *argv[])
 		index++;
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 4
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 4 -------------------\n", DEFAULT);
@@ -84,7 +84,7 @@ int	main(int argc, char *argv[])
 		index++;
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 5
 	index = 0;
 	printf("%s%s%s", GREEN, "------------------ TEST 5 -------------------\n", DEFAULT);
@@ -97,7 +97,7 @@ int	main(int argc, char *argv[])
 		index++;
 	}
 	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "------------------- FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

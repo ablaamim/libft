@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 17:19:36 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 19:18:13 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/08 20:23:15 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_itoa);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 //TEST 2
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	ret_itoa = ft_itoa(2147483647);
@@ -46,7 +46,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_itoa);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 //TEST 3
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
 	ret_itoa = ft_itoa(0);
@@ -56,7 +56,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_itoa);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 4
 	printf("%s%s%s", GREEN, "------------------ TEST 4 -------------------\n", DEFAULT);
 	ret_itoa = ft_itoa(-1234);
@@ -66,7 +66,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_itoa);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 4
 	printf("%s%s%s", GREEN, "------------------ TEST 5 -------------------\n", DEFAULT);
 	ret_itoa = ft_itoa(1234);
@@ -76,7 +76,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_itoa);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "------------------ FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
