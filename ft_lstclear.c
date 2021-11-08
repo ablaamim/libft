@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 08:33:30 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/07 08:33:32 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/08 19:04:54 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
 
+	if (*lst == NULL)
+		return ;
 	while (*lst != NULL)
 	{
 		temp = *lst;
