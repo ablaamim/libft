@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 08:39:01 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 11:10:13 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/08 19:22:24 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	main(void)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	index = 0;
@@ -63,7 +63,7 @@ int	main(void)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 3
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
 	index = 0;
@@ -80,7 +80,7 @@ int	main(void)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "----------------- FINISH ---------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:12:18 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 18:57:02 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/08 19:21:19 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_ft_substr);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 
 	printf("%s%s%s", GREEN, "------------------- TEST 2 ------------------\n", DEFAULT);
@@ -49,7 +49,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_ft_substr);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 3
 	printf("%s%s%s", GREEN, "------------------- TEST 3 ------------------\n", DEFAULT);
 	ret_ft_substr = ft_substr(str, 12, 8);
@@ -59,7 +59,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_ft_substr);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	// TEST 4
 
 	printf("%s%s%s", GREEN, "------------------- TEST 4 ------------------\n", DEFAULT);
@@ -70,7 +70,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_ft_substr);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 5
 
 	printf("%s%s%s", GREEN, "------------------- TEST 5 ------------------\n", DEFAULT);
@@ -81,7 +81,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_ft_substr);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 6
 	printf("%s%s%s", GREEN, "------------------- TEST 6 ------------------\n", DEFAULT);
 	ret_ft_substr = ft_substr(str_null, 0, 4);
@@ -91,7 +91,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", GREEN, "[KO]\n", DEFAULT);
 	free(ret_ft_substr);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TESTS 7
 	printf("%s%s%s", GREEN, "------------------- TEST 7 ------------------\n", DEFAULT);
 	ret_ft_substr = ft_substr(str, 0, 11);
@@ -101,7 +101,7 @@ int	main(int argc, char **argv)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	free(ret_ft_substr);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "---------------- FINISH ---------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
