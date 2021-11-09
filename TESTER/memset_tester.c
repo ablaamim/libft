@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:22:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 10:19:54 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/09 07:39:04 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int	main(int argc, char *argv[])
 	TESTER(memset("NULL",0,0);)
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 1
 	memset(twenty, 65, 1);
 	ft_memset(ft_twenty, 65, 1);
@@ -96,7 +96,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 	memset(twenty, 200, 5);
 	ft_memset(ft_twenty, 200, 5);
@@ -114,7 +114,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 3
 	memset(twenty, 65, 19);
 	ft_memset(ft_twenty, 65, 19);
@@ -132,7 +132,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "------------------ FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

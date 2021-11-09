@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:38:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/04 12:24:21 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/09 07:38:25 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int	main(int argc, char *argv[])
 	TESTER(strlen(NULL);)
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // ALL TESTS IN ONE
 	printf("%s%s%s", GREEN, "------------------- TESTS -------------------\n", DEFAULT);
 	if (ft_strlen(str) != strlen(str) && ft_strlen(str1) != strlen(str1) && strlen(str2) != ft_strlen(str2) &&
@@ -76,7 +76,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "-------------------- FINISH ------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
