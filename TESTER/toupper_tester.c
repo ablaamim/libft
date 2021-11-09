@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 14:12:57 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/10/21 14:18:26 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/09 08:30:05 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,11 @@ int	main(int argc, char *argv[])
 	int		index;
 	char	my_test_list[10] = { 'a', 'A', '9', 'z', '%', '\n', '\0', '0', 'Z', '\r'};
 
+/******************************************************************************/
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "\t TESTING YOUR TOUPPER FUNCTION : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
+/******************************************************************************/
 	index = 0;
 	printf("%s%s%s", GREEN, "-------------------- TEST -------------------\n", DEFAULT);
 	while (index < 10)
@@ -36,6 +41,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 		++index;
 	}
-	printf("%s%s%s", GREEN, "------------------- FINISH ------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "--------------------------------------------\n", DEFAULT);
+	usleep(250000);
+	printf("%s%s%s", BLUE, "------------------- FINISH ------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

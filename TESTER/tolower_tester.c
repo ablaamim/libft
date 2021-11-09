@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 14:05:20 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/03 21:50:57 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/09 08:32:44 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,9 @@ int	main(int argc, char *argv[])
 	char	my_test_list[10] = { 'a', 'A', '9', 'z', '%', '\n', '\0', '0', 'Z', '\r'};
 
 /******************************************************************************/
+	printf("%s%s%s", BLUE, "---------------------------------------------\n", DEFAULT);
 	printf("%s%s%s", BLUE, "\tTESTING YOUR TOLOWER FUNCTION : \n", DEFAULT);
+	printf("%s%s%s", BLUE, "---------------------------------------------\n", DEFAULT);
 /******************************************************************************/
 
 	index = 0;
@@ -40,6 +42,8 @@ int	main(int argc, char *argv[])
 			printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 		++index;
 	}
-	printf("%s%s%s", GREEN, "-------------------- FINISH ------------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	usleep(250000);
+	printf("%s%s%s", BLUE, "-------------------- FINISH -----------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

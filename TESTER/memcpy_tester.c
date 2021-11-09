@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 18:58:44 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/09 07:48:28 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,29 +68,29 @@ int	main(int argc, char *argv[])
 	/**************************************************************************/
 
 // SEGFAULT TEST
-	printf("%s%s%s", GREEN, "-------------- SEGFAULT TESTS : -------------\n", DEFAULT);
+	printf("%s%s%s", GREEN, "-------------- SEGFAULT TESTS : --------------\n", DEFAULT);
 	TESTER(memcpy(NULL,NULL,0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy("NULL",NULL,0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy(NULL,"NULL",0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy("NULL","NULL",0);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy(NULL,NULL,1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy("NULL",NULL,1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy(NULL,"NULL",1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy("NULL","NULL",1);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy("NULLO",NULL,3);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy(NULL,"NULLO",3);)
-	sleep(1);
+	usleep(250000);
 	TESTER(memcpy("NULLO","NULL",3);)
-	sleep(1);
+	usleep(250000);
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 
@@ -111,7 +111,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);	
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 
 // TEST 2
 	memcpy(twenty2, thirty_a, 19);
@@ -130,7 +130,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 
 // TEST 3
 	memcpy(twenty3, thirty_a, 0);
@@ -149,7 +149,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 
 // TEST 4
 	memcpy(twenty, ten_a, 20);
@@ -168,7 +168,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 5
 	memcpy(twenty, "", 10);
 	ft_memcpy(ft_twenty, "", 10);
@@ -186,7 +186,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 6
 	memcpy(empty, ten_a, 1);
 	ft_memcpy(ft_empty, ten_a, 1);
@@ -204,7 +204,7 @@ int	main(int argc, char *argv[])
 		printf(DEFAULT);
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "------------------ FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

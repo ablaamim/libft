@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:59:43 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 18:56:36 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/09 08:25:06 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	ret_str0 = strlcpy(str0, (str0 + 6), 5);
@@ -47,7 +47,7 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "----------------- FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
