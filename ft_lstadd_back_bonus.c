@@ -1,36 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 17:49:02 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 09:02:16 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/07 08:30:43 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/07 08:30:46 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *s)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	long	res;
-	int		sign;
+	t_list	*temp;
 
-	sign = 1;
-	res = 0;
-	if (s == NULL)
-		return (0);
-	while ((*s >= 9 && *s <= 13) || *s == 32)
-		s++;
-	if (*s == '-')
-		sign *= -1;
-	if (*s == '+' || *s == '-')
-		s++;
-	while (*s >= 48 && *s <= 57)
+	if (new == NULL)
+		return ;
+	if (*lst == NULL)
+		*lst = new;
+	else
 	{
-		res = res * 10 + *s - 48;
-		s++;
+		temp = ft_lstlast(*lst);
+		temp->next = new;
 	}
-	return (res * sign);
 }

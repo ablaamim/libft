@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 17:49:02 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 09:02:16 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/07 08:35:30 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/08 19:04:11 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *s)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	long	res;
-	int		sign;
+	t_list	*list_ptr;
 
-	sign = 1;
-	res = 0;
-	if (s == NULL)
-		return (0);
-	while ((*s >= 9 && *s <= 13) || *s == 32)
-		s++;
-	if (*s == '-')
-		sign *= -1;
-	if (*s == '+' || *s == '-')
-		s++;
-	while (*s >= 48 && *s <= 57)
+	list_ptr = lst;
+	while (list_ptr != NULL)
 	{
-		res = res * 10 + *s - 48;
-		s++;
+		(*f)(list_ptr->content);
+		list_ptr = list_ptr->next;
 	}
-	return (res * sign);
 }

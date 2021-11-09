@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 17:49:02 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 09:02:16 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/07 08:37:23 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/07 08:37:24 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *s)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	long	res;
-	int		sign;
+	t_list	*temp;
 
-	sign = 1;
-	res = 0;
-	if (s == NULL)
-		return (0);
-	while ((*s >= 9 && *s <= 13) || *s == 32)
-		s++;
-	if (*s == '-')
-		sign *= -1;
-	if (*s == '+' || *s == '-')
-		s++;
-	while (*s >= 48 && *s <= 57)
-	{
-		res = res * 10 + *s - 48;
-		s++;
-	}
-	return (res * sign);
+	temp = lst;
+	if (lst == NULL)
+		return ;
+	lst = lst->next;
+	(*del)(temp->content);
+	free(temp);
 }
