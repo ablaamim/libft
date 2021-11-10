@@ -6,25 +6,25 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 10:19:58 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 10:20:01 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 11:19:33 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/ *
+/*
 ** CREATE OUR INCLUDE
-* /
+*/
 
 /* 	defines the name of our lib */
-# ifndef LIBFT_H
+#ifndef LIBFT_H
 # define LIBFT_H
 
 /* 	include our libraries and our functions */
 # include <unistd.h>
 # include <stdlib.h>
 
-/ *
+/*
 ** PART I
-* /
+*/
 int 		ft_atoi ( const  char * str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t memb, size_t size);
@@ -49,9 +49,9 @@ char	*ft_strrchr(const char *src, int c);
 int		ft_tolower(char c);
 int 		ft_toupper ( char c);
 
-/ *
+/*
 ** PART II
-* /
+*/
 char	*ft_itoa(int n);
 void	ft_putchar_fd(char c, int fd);
 void 	ft_putendl_fd ( char * s, int fd);
@@ -64,3 +64,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
+#endif
