@@ -7,7 +7,11 @@
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*   Updated: 2021/11/10 13:33:21 by ablaamim         ###   ########.fr       */
+=======
+/*   Updated: 2021/11/10 14:15:20 by hnaji-el         ###   ########.fr       */
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
 =======
 /*   Updated: 2021/11/10 14:15:20 by hnaji-el         ###   ########.fr       */
 >>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
@@ -44,15 +48,21 @@ bool	has_segfault_org;
 	TEST_SEGFAULT(f,has_segfault_org)\
 	TEST_SEGFAULT(ft_##f,has_segfault_ft)\
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(!has_segfault_org && has_segfault_ft){\
 			write(1,"\033[31m[KO]\033[0m(",13);\
 			write(1,#f,strlen(#f));\
 			write(1,") ",2);}\
 =======
+=======
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
         if(has_segfault_org != has_segfault_ft){\
             write(1,"\033[31m [KO]    \033[0m(",16);\
             write(1,#f,strlen(#f));\
             write(1,")\n",2);}\
+<<<<<<< HEAD
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
+=======
 >>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
 		else\
 			write(1,"\033[32m[OK]\033[0m ",13);\

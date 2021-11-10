@@ -7,7 +7,11 @@
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 11:13:57 by ablaamim          #+#    #+#             */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*   Updated: 2021/11/10 14:18:10 by ablaamim         ###   ########.fr       */
+=======
+/*   Updated: 2021/11/10 12:52:48 by hnaji-el         ###   ########.fr       */
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
 =======
 /*   Updated: 2021/11/10 12:52:48 by hnaji-el         ###   ########.fr       */
 >>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
@@ -43,8 +47,13 @@ bool has_segfault_org;
     TEST_SEGFAULT(f,has_segfault_org)\
     TEST_SEGFAULT(ft_##f,has_segfault_ft)\
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!has_segfault_org && has_segfault_ft){\
             write(1,"\033[31m[KO]\033[0m(",13);\
+=======
+        if(has_segfault_org != has_segfault_ft){\
+            write(1,"\033[31m [KO]    \033[0m(",16);\
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
 =======
         if(has_segfault_org != has_segfault_ft){\
             write(1,"\033[31m [KO]    \033[0m(",16);\
@@ -137,6 +146,9 @@ int	main(void)
 		usleep(250000);
 	TESTER(strlcat("NULLO","NULL",3);)
 		usleep(250000);
+<<<<<<< HEAD
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
+=======
 >>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
 	printf("\n");
 		usleep(250000);
@@ -172,7 +184,10 @@ int	main(void)
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	usleep(250000);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
 // TEST 4
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	ret_str2 = strlcat(NULL, "NUL", 0);
@@ -183,6 +198,9 @@ int	main(void)
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	usleep(250000);
+<<<<<<< HEAD
+>>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
+=======
 >>>>>>> b588523d672126638e36e8deeb93ec792f7962d9
 	printf("%s%s%s", BLUE, "----------------- FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
