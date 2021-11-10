@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 11:13:57 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 08:34:13 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 14:18:10 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,11 @@ bool has_segfault_org;
     TEST_SEGFAULT(f,has_segfault_org)\
     TEST_SEGFAULT(ft_##f,has_segfault_ft)\
         if(!has_segfault_org && has_segfault_ft){\
-            write(1,"\033[31m [KO]\n\033[0m(",13);\
+            write(1,"\033[31m[KO]\033[0m(",13);\
             write(1,#f,strlen(#f));\
             write(1,") ",2);}\
         else\
-            write(1,"\033[32m [OK]\n\033[0m ",13);\
+            write(1,"\033[32m[OK]\033[0m ",13);\
 
 int	main(void)
 {
@@ -72,31 +72,40 @@ int	main(void)
 	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
 /******************************************************************************/
 // SEGFAULT TESTS
-
 	printf("%s%s%s", GREEN, "------------- SEGFAULT TESTS ----------------\n", DEFAULT);
-	TESTER(strlcat(NULL,NULL,0);)
-		sleep(1);
-	TESTER(strlcat("NULL",NULL,0);)
-		sleep(1);
-	TESTER(strlcat(NULL,"NULL",0);)
-		sleep(1);
-	TESTER(strlcat("NULL","NULL",0);)
-		sleep(1);
-	TESTER(strlcat(NULL,NULL,1);)
-		sleep(1);
-	TESTER(strlcat("NULL",NULL,1);)
-		sleep(1);
-	TESTER(strlcat(NULL,"NULL",1);)
-		sleep(1);
-	TESTER(strlcat("NULL","NULL",1);)
-		sleep(1);
-	TESTER(strlcat("NULLO",NULL,3);)
-		sleep(1);
-	TESTER(strlcat(NULL,"NULLO",3);)
-		sleep(1);
-	TESTER(strlcat("NULLO","NULL",3);)
-		sleep(1);
+	TESTER(strlcat(NULL, NULL, 0);)
 	printf("\n");
+		usleep(250000);
+	TESTER(strlcat("NULL", NULL, 0);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat(NULL, "NULL", 0);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat("NULL", "NULL", 0);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat(NULL, NULL, 1);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat("NULL", NULL, 1);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat(NULL, "NULL", 1);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat("NULL", "NULL", 1);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat("NULLO", NULL, 3);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat(NULL, "NULLO", 3);)
+	printf("\n");
+		usleep(250000);
+	TESTER(strlcat("NULLO", "NULL", 3);)
+	printf("\n");
+		usleep(250000);
     printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 // TEST 1
 	printf("%s%s%s", GREEN, "------------------ TEST 1 -------------------\n", DEFAULT);
@@ -107,7 +116,7 @@ int	main(void)
 	else
 		printf("%s%s%s", RED,  "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 	printf("%s%s%s", GREEN, "------------------ TEST 2 -------------------\n", DEFAULT);
 	ret_str2 = strlcat(str2_dst, str2_src, 3);
@@ -117,7 +126,7 @@ int	main(void)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 3
 	printf("%s%s%s", GREEN, "------------------ TEST 3 -------------------\n", DEFAULT);
 	ret_str4 = strlcat(str4_dst, str4_src, 5);
@@ -127,7 +136,7 @@ int	main(void)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "----------------- FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }
