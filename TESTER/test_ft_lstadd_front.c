@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   test_ft_lstadd_front.c                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/10 19:40:52 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 19:45:05 by ablaamim         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../libft.h"
 #include <stdio.h>
 #include <string.h>
@@ -23,10 +11,10 @@ int	main(void)
 	t_list	*elem;
 	t_list	*elem_test;
 
-	elem = ft_lstnew_bonus(str1);
-	elem->next = ft_lstnew_bonus(str2);
-	elem->next->next = ft_lstnew_bonus(str3);
-	ft_lstadd_front_bonus(&elem, ft_lstnew_bonus(str4));
+	elem = ft_lstnew(str1);
+	elem->next = ft_lstnew(str2);
+	elem->next->next = ft_lstnew(str3);
+	ft_lstadd_front(&elem, ft_lstnew(str4));
 	if (!strcmp(elem->content, str4) \
 		&& !strcmp(elem->next->content, str1) \
 		&& !strcmp(elem->next->next->content, str2) \
@@ -39,10 +27,10 @@ int	main(void)
 	free(elem->next);
 	free(elem);
 
-	elem = ft_lstnew_bonus(str1);
-	elem->next = ft_lstnew_bonus(str2);
-	elem->next->next = ft_lstnew_bonus(str3);
-	ft_lstadd_front_bonus(&elem, NULL);
+	elem = ft_lstnew(str1);
+	elem->next = ft_lstnew(str2);
+	elem->next->next = ft_lstnew(str3);
+	ft_lstadd_front(&elem, NULL);
 	if (!strcmp(elem->content, str1) \
 		&& !strcmp(elem->next->content, str2) \
 		&& !strcmp(elem->next->next->content, str3))
@@ -53,11 +41,11 @@ int	main(void)
 	free(elem->next);
 	free(elem);
 
-	elem = ft_lstnew_bonus(str1);
-	elem->next = ft_lstnew_bonus(str2);
-	elem->next->next = ft_lstnew_bonus(str3);
-	elem_test = ft_lstnew_bonus(str4);
-	ft_lstadd_front_bonus(NULL, elem_test);
+	elem = ft_lstnew(str1);
+	elem->next = ft_lstnew(str2);
+	elem->next->next = ft_lstnew(str3);
+	elem_test = ft_lstnew(str4);
+	ft_lstadd_front(NULL, elem_test);
 	if (!strcmp(elem->content, str1) \
 		&& !strcmp(elem->next->content, str2) \
 		&& !strcmp(elem->next->next->content, str3))
@@ -69,10 +57,10 @@ int	main(void)
 	free(elem);
 	free(elem_test);
 
-	elem = ft_lstnew_bonus(str1);
-	elem->next = ft_lstnew_bonus(str2);
-	elem->next->next = ft_lstnew_bonus(str3);
-	ft_lstadd_front_bonus(NULL, NULL);
+	elem = ft_lstnew(str1);
+	elem->next = ft_lstnew(str2);
+	elem->next->next = ft_lstnew(str3);
+	ft_lstadd_front(NULL, NULL);
 	if (!strcmp(elem->content, str1) \
 		&& !strcmp(elem->next->content, str2) \
 		&& !strcmp(elem->next->next->content, str3))
