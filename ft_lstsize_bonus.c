@@ -6,13 +6,13 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 08:34:44 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/07 08:34:46 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 19:20:09 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_lstsize_bonus(t_list *lst)
 {
 	t_list	*temp;
 	int		count;

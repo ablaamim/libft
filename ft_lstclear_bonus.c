@@ -6,13 +6,13 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 08:33:30 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/08 19:04:54 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 19:18:19 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear_bonus(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
 

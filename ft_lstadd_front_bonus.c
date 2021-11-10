@@ -6,13 +6,13 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 08:29:43 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/08 19:06:05 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 19:18:00 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front_bonus(t_list **lst, t_list *new)
 {
 	t_list	*elem;
 

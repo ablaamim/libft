@@ -6,7 +6,7 @@
 #    By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 19:39:18 by ablaamim          #+#    #+#              #
-#    Updated: 2021/11/06 18:53:40 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/11/10 19:15:17 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,16 +23,15 @@ SRC=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_putchar_fd.c ft_putnbr_fd.c ft_putchar_fd.c ft_putendl_fd.c \
 			ft_putstr_fd.c ft_striteri.c
 
-SRCB=	ft_lstnew_bonus.c		\
-		ft_lstadd_front_bonus.c	\
-		ft_lstsize_bonus.c		\
-		ft_lstlast_bonus.c		\
-		ft_lstadd_back_bonus.c	\
-		ft_lstdelone_bonus.c	\
-		ft_lstclear_bonus.c		\
-		ft_lstiter_bonus.c		\
-		ft_lstmap_bonus.c		\
-
+SRCB=	ft_lstnew_bonus.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstsize_bonus.c \
+		ft_lstlast_bonus.c \
+		ft_lstadd_back_bonus.c \
+		ft_lstdelone_bonus.c \
+		ft_lstclear_bonus.c \
+		ft_lstiter_bonus.c \
+		ft_lstmap_bonus.c \
 
 all: $(NAME)
 
