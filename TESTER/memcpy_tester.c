@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:58:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 17:56:12 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 13:33:21 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,26 @@ bool	has_segfault_org;
 	TEST_SEGFAULT(f,has_segfault_org)\
 	TEST_SEGFAULT(ft_##f,has_segfault_ft)\
 		if(!has_segfault_org && has_segfault_ft){\
-			write(1,"\033[31m[KO]\n\033[0m(",13);\
+			write(1,"\033[31m[KO]\033[0m(",13);\
 			write(1,#f,strlen(#f));\
 			write(1,") ",2);}\
 		else\
-			write(1,"\033[32m[OK]\n\033[0m ",13);\
+			write(1,"\033[32m[OK]\033[0m ",13);\
+
+void	ft_intarray_debug(int *tab, int size)
+{
+	int	i;
+
+	i = 0;
+	printf("[");
+	while (i < size - 1)
+	{
+		printf("%d, ", tab[size - 1]);
+		i++;
+	}
+	printf("%d", tab[size - 1]);
+	printf("]");
+}
 
 int	main(int argc, char *argv[])
 {
@@ -60,39 +75,54 @@ int	main(int argc, char *argv[])
 	char	ft_empty[2] = "";
 	char	*thirty_a = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\0";
 	char	*ten_a = "aaaaaaaaaa\0";
+	int		to_fill[] = {0, 1, 2, 3};
+	int		intarray[] = {1337, 42, 69, 404};
+	int		to_fill2[] = {0, 1, 2, 3};
+	int		intarray2[] = {1337, 42, 69, 404};
 
-	/**************************************************************************/
+/******************************************************************************/
 	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
 	printf("%s%s%s", BLUE, "\t TESTING YOUR MEMCPY FUNCTION : \n", DEFAULT);
 	printf("%s%s%s", BLUE, "----------------------------------------------\n", DEFAULT);
-	/**************************************************************************/
+/******************************************************************************/
 
 // SEGFAULT TEST
 	printf("%s%s%s", GREEN, "-------------- SEGFAULT TESTS : --------------\n", DEFAULT);
 	TESTER(memcpy(NULL,NULL,0);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy("NULL",NULL,0);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy(NULL,"NULL",0);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy("NULL","NULL",0);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy(NULL,NULL,1);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy("NULL",NULL,1);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy(NULL,"NULL",1);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy("NULL","NULL",1);)
+	printf("\n");
 	usleep(250000);
-	TESTER(memcpy("NULLO",NULL,3);)
+	TESTER(memcpy("NULL",NULL,3);)
+	printf("\n");
 	usleep(250000);
-	TESTER(memcpy(NULL,"NULLO",3);)
+	TESTER(memcpy(NULL,"NULL",3);)
+	printf("\n");
 	usleep(250000);
 	TESTER(memcpy("NULLO","NULL",3);)
-	usleep(250000);
 	printf("\n");
+	usleep(250000);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
+	usleep(250000);
 
 // TEST 1
 	memcpy(twenty, ten_a, 1);
@@ -205,6 +235,16 @@ int	main(int argc, char *argv[])
 	}
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	usleep(250000);
+	printf("%s%s%s", GREEN, "--------------- INTARRAY TEST ---------------\n", DEFAULT);
+	printf("%s%s%s", BLUE, "------------ MUST LOOK IDENTICAL ------------\n", DEFAULT);
+	memcpy(to_fill, intarray, 4);
+	printf(GREEN);
+	ft_intarray_debug(to_fill, 4);
+	printf("\n");
+	ft_memcpy(to_fill2, intarray2, 4);
+	ft_intarray_debug(to_fill2, 4);
+	printf("\n");
+	printf(DEFAULT);
 	printf("%s%s%s", BLUE, "------------------ FINISH -------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

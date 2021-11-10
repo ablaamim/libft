@@ -6,13 +6,13 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 09:26:17 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 09:26:23 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 12:01:14 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/ *
+/*
 ** COPY THE CONTENT FROM SOURCE TO DEST WITHIN YOUR FIRST 'n' CHARACTERS
-* /
+*/
 
 / *
 ** CHECK THE DIFFERENCE BETWEEN MEMCPY AND MEMMOVE
@@ -47,11 +47,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/ *
+/*
 	Even though the MEMCPY and MEMMOVE functions are similar, they have discrepancies\
 	in the way they arrive at their expected result.
 	The MEMCPY function does not overwrite the destination memory, that is, it can contain
 	"garbage" in the course of its result.
 	The MEMMOVE function overwrites the destination memory, therefore, in addition to being more secure the
 	result obtained by her will have more precision.
-* /
+*/
