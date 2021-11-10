@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   test_ft_putchar_fd.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/07 08:27:50 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 19:46:16 by ablaamim         ###   ########.fr       */
+/*   Created: 2021/11/10 19:49:02 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/10 19:49:27 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-t_list	*ft_lstnew_bonus(void *content)
+int	main(void)
 {
-	t_list	*elem;
-
-	elem = malloc(sizeof(t_list));
-	if (elem == NULL)
-		return (NULL);
-	elem->content = content;
-	elem->next = NULL;
-	return (elem);
+	ft_putchar_fd(-1, -1);
+	ft_putchar_fd(-1, 0);
+	ft_putchar_fd(0, -1);
+	ft_putchar_fd(0, 0);
+	ft_putchar_fd('e', 0);
+	ft_putchar_fd('e', 1);
+	ft_putchar_fd('e', 2);
+	return (EXIT_SUCCESS);
 }
