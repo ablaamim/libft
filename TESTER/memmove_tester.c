@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:08:43 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/05 19:28:52 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 13:53:45 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ bool has_segfault_org;
 	TEST_SEGFAULT(f,has_segfault_org)\
 	TEST_SEGFAULT(ft_##f,has_segfault_ft)\
 		if(!has_segfault_org && has_segfault_ft){\
-			write(1,"\033[31m[KO]\n\033[0m(",13);\
+			write(1,"\033[31m[KO]\033[0m(",13);\
 			write(1,#f,strlen(#f));\
 			write(1,") ",2);}\
 		else\
-			write(1,"\033[32m[OK]\n\033[0m ",13);\
+			write(1,"\033[32m[OK]\033[0m ",13);\
 
 int	main(int argc, char *argv[])
 {
@@ -72,28 +72,39 @@ int	main(int argc, char *argv[])
 // SEGFAULT TESTS :
 	printf("%s%s%s", GREEN, "-------------- SEGFAULT TESTS : -------------\n", DEFAULT);
 	TESTER(memmove(NULL, NULL, 0);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove("NULL", NULL, 0);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove(NULL, "NULL", 0);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove("NULL", "NULL", 0);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove(NULL, NULL, 1);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove("NULL", NULL, 1);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove(NULL, "NULL", 1);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove("NULL", "NULL", 1);)
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove("NULLO", NULL, 3);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove(NULL, "NULLO", 3);)
-	sleep(1);
+	printf("\n");
+	usleep(250000);
 	TESTER(memmove("NULLO", "NULL", 3);)
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 1
 	ptr_str0 = memmove(str0, str0 + 6, 0);
 	ptr_str1 = ft_memmove(str1, str1 + 6, 0);
@@ -103,7 +114,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 2
 	ptr_str0 = memmove(str0 + 5, str0 + 4, 4);
 	ptr_str1 = ft_memmove(str1 + 5, str1 + 4, 4);
@@ -113,7 +124,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	// TEST 3
 	ptr_str2 = ft_memmove(str2, str0, 3);
 	ptr_str3 = memmove(str3, str1, 3);
@@ -123,7 +134,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 //TEST 4
 	index = 0;
 	ptr_arr0 = memmove(arr0, arr0 + 2, 3 * sizeof(*arr0));
@@ -140,7 +151,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", GREEN, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 // TEST 5
 	index = 0;
 	ptr_arr0 = memmove(arr0, arr0 + 2, 1);
@@ -157,7 +168,7 @@ int	main(int argc, char *argv[])
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	sleep(1);
+	usleep(250000);
 	printf("%s%s%s", BLUE, "------------------- FINISH ------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);
 }

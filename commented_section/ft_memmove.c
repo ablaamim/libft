@@ -6,23 +6,23 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 09:26:17 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 12:01:14 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 13:49:37 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** COPY THE CONTENT FROM SOURCE TO DEST WITHIN YOUR FIRST 'n' CHARACTERS
+** COPY THE CONTENT FROM SOURCE  MEMORY AREA TO DEST MEMORY AREA WITHIN YOUR FIRST 'n' CHARACTERS
 */
 
-/ *
-** CHECK THE DIFFERENCE BETWEEN MEMCPY AND MEMMOVE
-* /
+/*
+** !! CHECK THE DIFFERENCE BETWEEN MEMCPY AND MEMMOVE
+*/
 
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-/* 	assign variables to copy characters from source to dest from the first or last position of length 'n' */
+/* Assign variables to copy characters from source to dest from the first or last position of length 'n' */
 	char		*cdst;
 	const char	*cscr;
 	char		*rev_dst;
@@ -30,6 +30,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	cdst = dest;
 	cscr = src;
+	/* BIG ENDIANNESS METHOD*/
 	rev_dst = cdst + (n - 1);
 	rev_src = cscr + (n - 1);
 	if (dest == src || n == 0)
@@ -37,11 +38,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (!dest || !src)
 		return (NULL);
 	if (dest < src)
-/* 	copy from the first character to the character at position 'n' */
+/* Copy from the first character to the character at position 'n' */
 		while (n--)
 			*cdst++ = *cscr++;
 	else
-/* 	copy from the last character to the character at position 'n' */
+/* Copy from the last character to the character at position 'n' */
 		while (n--)
 			*rev_dst-- = *rev_src--;
 	return (dest);

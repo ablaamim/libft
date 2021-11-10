@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 10:15:39 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 11:23:04 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 13:34:03 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -19,24 +19,24 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	int 			i;
-	char 		* pd;
+	char 		*pd;
 	const char	*ps;
 
-	i = 0;
-	pd = ( char *) dest;
-	ps = (char *)src;
 	if (dest == NULL && src == NULL) /* Protection from NULL */
 		return (NULL);
 	if (pd == ps) /* Same pointer case*/
-		return (NULL);
+		return (dst);
 /* As long as 'n' is different from 0 we will copy memory area from source to dest */
+	i = 0;
+	pd = (unsigned char *) dest;
+	ps = (unsigned char *) src;
 	while (n > 0)
 	{
-		pd [i] = ps [i];
+		pd[i] = ps[i];
 		i++;
 		n--;
 	}
-	return (pd);
+	return (dst);
 }
 
 /*
