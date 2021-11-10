@@ -6,13 +6,13 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 10:12:42 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 10:12:46 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 11:31:17 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/ *
+/*
 ** COPY TWO STRINGS TO A SPECIFIC PASSED SIZE AS PARAMETER
-* /
+*/
 
 #include "libft.h"
 
@@ -31,7 +31,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 			dest[i] = src[i];
 			i++;
 		}
-		dest [i] = ' \ 0 ' ;
+		dest [i] = '\0';
 	}
 /* 	return the size of our string source */
 	return (ft_strlen(src));

@@ -6,14 +6,14 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 09:41:34 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 09:41:35 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 11:30:59 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/ *
+/*
 ** DIVIDING A STRING WHENEVER A PAST 'c' CHARACTER OCCURS
 ** AS PARAMETER
-* /
+*/
 
 #include "libft.h"
 
@@ -57,7 +57,7 @@ char	*ft_strndup(const char *s, size_t n)
 		str[i] = s[i];
 		i++;
 	}
-	str [i] = ' \ 0 ' ;
+	str [i] = '\0' ;
 	return (str);
 }
 

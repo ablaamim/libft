@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 10:17:24 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 10:17:25 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 11:34:59 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlen(const char *s)
 
 	i = 0;
 /* 	as long as my 's' string doesn't reach the end we will increment our account\
-dor 'i' * /
+dor 'i' */
 	while (s[i] != 0)
 		i++;
 /* 	our 'i' counter has the length of our string */
