@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:38:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 07:38:25 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 14:19:51 by hnaji-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ bool has_segfault_org;
 #define TESTER(f) \
 	TEST_SEGFAULT(f,has_segfault_org)\
 	TEST_SEGFAULT(ft_##f,has_segfault_ft)\
-		if(!has_segfault_org && has_segfault_ft){\
-			write(1,"\033[31m[KO] \033[0m(",13);\
-			write(1,#f,strlen(#f));\
-			write(1,") ",2);}\
+        if(has_segfault_org != has_segfault_ft){\
+            write(1,"\033[31m [KO]    \033[0m(",16);\
+            write(1,#f,strlen(#f));\
+            write(1,")\n",2);}\
 		else\
 			write(1,"\033[32m[OK]\033[0m ",13);\
 

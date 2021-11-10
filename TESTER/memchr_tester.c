@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 21:48:53 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/08 20:23:40 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 14:28:51 by hnaji-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ bool has_segfault_org;
 #define TESTER(f) \
 	TEST_SEGFAULT(f,has_segfault_org)\
 	TEST_SEGFAULT(ft_##f,has_segfault_ft)\
-		if(!has_segfault_org && has_segfault_ft){\
-			write(1,"\033[31mi[KO]\033[0m(",13);\
-			write(1,#f,strlen(#f));\
-			write(1,") ",2);}\
+        if(has_segfault_org != has_segfault_ft){\
+            write(1,"\033[31m [KO]    \033[0m(",16);\
+            write(1,#f,strlen(#f));\
+            write(1,")\n",2);}\
 		else\
-			write(1,"\033[32m[OK]\033[0m ",13);\
+			write(1,"\033[32m [OK]\n\033[0m ",15);\
 
 int	main(int argc, char **argv)
 {
@@ -79,9 +79,9 @@ int	main(int argc, char **argv)
 	ptr_str0 = memchr(str0, 'l', 2);
 	ptr_str1 = ft_memchr(str0, 'l', 2);
 	if (ptr_str0 == ptr_str1)
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+		printf("%s%s%s", GREEN, " [OK]\n", DEFAULT);
 	else
-		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+		printf("%s%s%s", RED, " [KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	usleep(250000);
 //TEST 2
@@ -89,9 +89,9 @@ int	main(int argc, char **argv)
 	ptr_str0 = memchr(str0, 'u', 20);
 	ptr_str1 = ft_memchr(str0, 'u', 20);
 	if (ptr_str0 == ptr_str1)
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+		printf("%s%s%s", GREEN, " [OK]\n", DEFAULT);
 	else
-		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+		printf("%s%s%s", RED, " [KO]\n", DEFAULT);
 	usleep(250000);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	usleep(250000);
@@ -100,16 +100,16 @@ int	main(int argc, char **argv)
 	ptr_str0 = ft_memchr(str1, 'j', 3);
 	ptr_str1 = memchr(str1, 'j', 3);
 	if (ptr_str0 == ptr_str1)
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+		printf("%s%s%s", GREEN, " [OK]\n", DEFAULT);
 	else
-		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+		printf("%s%s%s", RED, " [KO]\n", DEFAULT);
 	usleep(250000);
 	ptr_str0 = ft_memchr(str1, '\0', 3);
 	ptr_str1 = memchr(str1, '\0', 3);
 	if (ptr_str0 == ptr_str1)
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+		printf("%s%s%s", GREEN, " [OK]\n", DEFAULT);
 	else
-		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+		printf("%s%s%s", RED, " [KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	usleep(250000);
 // TEST 4
@@ -117,9 +117,9 @@ int	main(int argc, char **argv)
 	ptr_arr0 = memchr(arr0, 5, 3 * (sizeof(*arr0)));
 	ptr_arr1 = ft_memchr(arr0, 5, 3 * (sizeof(*arr0)));
 	if (ptr_arr0 == ptr_arr1)
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+		printf("%s%s%s", GREEN, " [OK]\n", DEFAULT);
 	else
-		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+		printf("%s%s%s", RED, " [KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
 	usleep(250000);
 // TEST  5
@@ -127,9 +127,9 @@ int	main(int argc, char **argv)
 	ptr_arr0 = memchr(arr0, 5, 40 * (sizeof(*arr0)));
 	ptr_arr1 = ft_memchr(arr0, 5, 40 * (sizeof(*arr0)));
 	if (ptr_arr0 == ptr_arr1)
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+		printf("%s%s%s", GREEN, " [OK]\n", DEFAULT);
 	else
-		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
+		printf("%s%s%s", RED, " [KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
 	usleep(250000);
 	printf("%s%s%s", BLUE, "---------------- FINISH ----------------------\n", DEFAULT);
