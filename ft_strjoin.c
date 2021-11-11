@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:38:04 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/11 14:47:35 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/11 18:09:28 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,29 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*scat;
-	int		len_s1;
-	int		len_s2;
+	char	*joined;
+	size_t		i;
+	size_t		j;
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	len_s1 = (ft_strlen((char *)s1));
-	len_s2 = (ft_strlen((char *)s2));
-	scat = (char *)malloc((len_s1 + len_s2 + 1) * sizeof(char));
-	if (scat == NULL)
+	joined = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (joined == NULL)
 		return (NULL);
-	ft_strlcpy(&scat[0], s1, len_s1 + 1);
-	ft_strlcpy(&scat[len_s1], s2, len_s2 + 1);
-	return (scat);
+	i = 0;
+	j = 0;
+	while (s1[j] != '\0')
+	{
+		joined[i] = s1[j];
+		i++;
+		j++;
+	}
+	j = 0;
+	while (s2[j] != '\0')
+	{
+		joined[i] = s2[j];
+		i++;
+		j++;
+	}
+	return (joined);
 }
