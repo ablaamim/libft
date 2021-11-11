@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:12:18 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 19:12:51 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/11 14:51:56 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char **argv)
 	(void)	argc;
 	(void)	argv;
 	char	str[13] = "Hello world!";
-	char	str_null[4] = "";
+	char	str_null[] = "";
 	char	*ret_ft_substr;
 
 /******************************************************************************/
