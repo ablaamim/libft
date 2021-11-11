@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:22:07 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 07:39:04 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/10 22:51:02 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ bool has_segfault_org;
 #define TESTER(f) \
     TEST_SEGFAULT(f,has_segfault_org)\
     TEST_SEGFAULT(ft_##f,has_segfault_ft)\
-        if(!has_segfault_org && has_segfault_ft){\
-            write(1,"\033[31mi[KO]\033[0m(",13);\
+        if(has_segfault_org != has_segfault_ft){\
+            write(1,"\033[31m[KO]\033[0m(",13);\
             write(1,#f,strlen(#f));\
             write(1,") ",2);}\
         else\
@@ -74,7 +74,9 @@ int	main(int argc, char *argv[])
 // TEST SEGFAULT
 	printf("%s%s%s", GREEN, "-------------- SEGFAULT TESTS ---------------\n", DEFAULT);
 	TESTER(memset(NULL,0,0);)
+	printf("\n");
 	TESTER(memset(NULL,0,1);)
+	printf("\n");
 	TESTER(memset("NULL",0,0);)
 	printf("\n");
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
