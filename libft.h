@@ -6,18 +6,12 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:59:15 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/10 19:16:43 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/12 14:15:09 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
 
 /*  REMOVE LATER   */
 
@@ -29,7 +23,6 @@ typedef struct s_list
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <string.h>
 
 // Part 1 functions
 int		ft_isalpha(int c);
@@ -68,17 +61,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-
-// Bonus functions
-t_list	*ft_lstnew_bonus(void *content);
-void	ft_lstadd_front_bonus(t_list **lst, t_list *new);
-int		ft_lstsize_bonus(t_list *lst);
-t_list	*ft_lstlast_bonus(t_list *lst);
-void	ft_lstdelone_bonus(t_list *lst, void (*del)(void*));
-void	ft_lstclear_bonus(t_list **lst, void (*del)(void*));
-void	ft_lstadd_back_bonus(t_list **lst, t_list *new);
-void	ft_lstiter_bonus(t_list *lst, void (*f)(void *));
-t_list	*ft_lstmap_bonus(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
 
 #endif
