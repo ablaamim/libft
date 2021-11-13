@@ -6,49 +6,52 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:43:35 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/06 11:41:55 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/13 17:17:42 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_countsize(long int n);
-void	ft_convbase(long int n, char *number, long int i);
+#include "libft.h"
+
+static size_t	ft_get_digit(int n)
+{
+	size_t	count;
+
+	count = 0;
+	if (n == 0)
+		count++;
+	while (n != 0)
+	{
+		n /= 10 ;
+		count++;
+	}
+	return (count);
+}
 
 char	*ft_itoa(int n)
 {
-	char		*number;
-	long int	len;
+	char		*nstr;
+	size_t		dgt;
+	long int	nb;
 
-	len = ft_countsize(n);
-	number = (char *)malloc((len + 1) * sizeof(char));
-	if (number == NULL)
-		return (NULL);
-	number[len--] = '\0';
-	ft_convbase(n, number, len);
-	return (number);
-}
-
-// recursively count integer size
-int	ft_countsize(long int n)
-{
-	if (n < 0)
-		return (1 + ft_countsize(-n));
-	if ((n / 10) == 0)
-		return (1);
-	else
-		return (1 + ft_countsize(n / 10));
-}
-
-// recursively convert integer to string
-void	ft_convbase(long int n, char *number, long int i)
-{
+	nb = n;
+	dgt = ft_get_digit(n);
 	if (n < 0)
 	{
-		number[0] = '-';
-		n *= -1;
+		nb *= -1;
+		dgt++;
 	}
-	if (n >= 10)
-		ft_convbase((n / 10), number, (i - 1));
-	number[i] = (n % 10) + '0';
+	nstr = (char *)malloc(sizeof(char) * (dgt + 1));
+	if (!nstr)
+		return (NULL);
+	nstr[dgt] = '\0' ;
+	while (dgt--)
+	{
+		nstr[dgt] = nb % 10 + '0';
+		nb /= 10 ;
+	}
+	if (n < 0)
+		nstr [0] = '-' ;
+	return (nstr);
 }
