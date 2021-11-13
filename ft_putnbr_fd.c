@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 06:22:57 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/11 01:42:01 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/14 00:14:49 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (nb < 0)
 	{
 		ft_putchar_fd(('-'), fd);
-		nb *= - 1;
+		nb *= -1;
 	}
 	if (nb >= 10)
 		ft_putnbr_fd((nb / 10), fd);

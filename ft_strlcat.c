@@ -6,19 +6,19 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 13:52:34 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/13 11:43:58 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/14 00:11:32 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char	*dst, const char	*src, size_t	size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	len;
 	size_t	i;
 
 	len = ft_strlen(dst);
-	i  = len;
+	i = len;
 	if (len >= size)
 		return (size + ft_strlen(src));
 	while (src[i - len] != '\0' && i + 1 < size)

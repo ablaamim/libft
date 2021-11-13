@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 17:16:19 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/11 01:22:37 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/14 00:12:30 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char			*cdst;
-	const char		*csrc;
-	char			*revdst;
-	const	char	*revsrc;
+	char		*cdst;
+	const char	*csrc;
+	char		*revdst;
+	const char	*revsrc;
 
 	cdst = dst;
 	csrc = src;
