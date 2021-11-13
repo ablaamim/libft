@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:38:04 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/11 18:09:28 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/13 11:18:33 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
+	joined[i] = '\0';
 	return (joined);
 }
