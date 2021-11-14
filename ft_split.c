@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:41:47 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/14 00:06:11 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/14 14:35:28 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	ft_count_words(char const *s, char c)
 	return (count);
 }
 
-static	char	*ft_make_words(char *word, char const *s, int j, int word_ln)
+static char	*ft_make_words(char *word, char const *s, int j, int word_ln)
 {
 	int	i;
 
@@ -44,7 +44,7 @@ static	char	*ft_make_words(char *word, char const *s, int j, int word_ln)
 	return (word);
 }
 
-static	char	**ft_split_words(char **res, char const *s, char c, int word_qt)
+static char	**ft_split_words(char **res, char const *s, char c, int word_ct)
 {
 	int	i;
 	int	j;
@@ -53,13 +53,13 @@ static	char	**ft_split_words(char **res, char const *s, char c, int word_qt)
 	i = 0;
 	j = 0 ;
 	word_ln = 0;
-	while (s[j] && i < word_qt)
+	while (s[j] && i < word_ct)
 	{
 		while (s[j] && s[j] == c)
-			j ++;
+			j++;
 		while (s[j] && s[j] != c)
 		{
-			j ++;
+			j++;
 			word_ln++;
 		}
 		res[i] = (char *)malloc(sizeof(char) * (word_ln + 1));
@@ -69,21 +69,21 @@ static	char	**ft_split_words(char **res, char const *s, char c, int word_qt)
 		word_ln = 0;
 		i++;
 	}
-	res[i] = 0;
+	res[i] = '\0';
 	return (res);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int		word_qt;
+	int		word_ct;
 	char	**res;
 
-	if (s == 0)
+	if (s == NULL)
 		return (NULL);
-	word_qt = ft_count_words(s, c);
-	res = (char **)malloc(sizeof(char *) * (word_qt + 1));
+	word_ct = ft_count_words(s, c);
+	res = (char **)malloc(sizeof(char *) * (word_ct + 1));
 	if (!res)
 		return (NULL);
-	ft_split_words (res, s, c, word_qt);
+	ft_split_words (res, s, c, word_ct);
 	return (res);
 }
