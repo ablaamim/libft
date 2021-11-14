@@ -6,7 +6,7 @@
 #    By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 19:39:18 by ablaamim          #+#    #+#              #
-#    Updated: 2021/11/12 13:46:53 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/11/14 18:32:46 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 # 	* CREATE A MAKEFILE TO COMPILATE OUR LIB * #
 
 # 	* generate a file type .a ~file responsible for creating our lib
-NAME	= libft.a
+NAME = libft.a
 # 	* command to compile our functions
 CFLAGS	= -Wall -Werror -Wextra
 CC	= gcc
