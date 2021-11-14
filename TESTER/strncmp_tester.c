@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 08:55:58 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 08:44:09 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/14 19:35:22 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,16 +71,6 @@ int	main(int argc, char **argv)
 	else
 		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
 	printf("%s%s%s", GREEN, "---------------------------------------------\n", DEFAULT);
-	usleep(250000);
-// TEST 5
-	printf("%s%s%s", GREEN, "------------------ TEST 5 -------------------\n", DEFAULT);
-	ret_strncmp = strncmp(str0, str1, -5);
-	ret_ft_strncmp = ft_strncmp(str0, str1, -5);
-	if (ret_strncmp == ret_ft_strncmp)
-		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
-	else
-		printf("%s%s%s", RED, "[KO]\n", DEFAULT);
-	printf("%s%s%s", GREEN, "----------------------------------------------\n", DEFAULT);
 	usleep(250000);
 	printf("%s%s%s", BLUE, "------------------ FINISH --------------------\n", DEFAULT);
 	return (EXIT_SUCCESS);

@@ -6,7 +6,7 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 18:01:33 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/09 18:01:59 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/14 20:00:31 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_striteri_ft(unsigned int	i, char	*c)
 int	main(void)
 {
 	char	str0[] = "Hello world";
-	char	str1[] = "42 São Paulo";
+	char	str1[] = "1337 Benguerir";
 	char	str2[] = "";
 	char	str3[] = "0000000000";
 	char	str4[] = "0000000000";

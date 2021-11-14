@@ -6,11 +6,9 @@
 /*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 23:43:35 by ablaamim          #+#    #+#             */
-/*   Updated: 2021/11/13 17:17:42 by ablaamim         ###   ########.fr       */
+/*   Updated: 2021/11/14 20:06:40 by ablaamim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 #include "libft.h"
 
@@ -45,13 +43,13 @@ char	*ft_itoa(int n)
 	nstr = (char *)malloc(sizeof(char) * (dgt + 1));
 	if (!nstr)
 		return (NULL);
-	nstr[dgt] = '\0' ;
+	nstr[dgt] = '\0';
 	while (dgt--)
 	{
 		nstr[dgt] = nb % 10 + '0';
 		nb /= 10 ;
 	}
 	if (n < 0)
-		nstr [0] = '-' ;
+		nstr [0] = '-';
 	return (nstr);
 }

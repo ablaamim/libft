@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   strmapi_tester.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablaamim <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/14 20:01:05 by ablaamim          #+#    #+#             */
+/*   Updated: 2021/11/14 20:02:45 by ablaamim         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../libft.h"
 #include <stdio.h>
 
@@ -6,10 +18,12 @@ char	ft_strmapi_ft(unsigned int	i, char	c)
 	return (c + i);
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
+	(void)	argc;
+	(void)	argv;
 	char	str0[] = "Hello world";
-	char	str1[] = "42 São Paulo";
+	char	str1[] = "1337 BENGUERIR";
 	char	str2[] = "";
 	char	str3[] = "0000000000";
 
@@ -18,11 +32,5 @@ int	main(void)
 	printf("%s\n", ft_strmapi(str2, ft_strmapi_ft));
 	printf("%s\n", ft_strmapi(str3, ft_strmapi_ft));
 	printf("%s\n", ft_strmapi(0, ft_strmapi_ft));
-	/*
-	if (1)
-		printf("\033[92mTest %2.i - OK \033[0m\n", index + 1);
-	else
-		printf("\033[91mTest %2.i - KO \033[0m\n", index + 1);
-	*/
-	return (0);
+	return (EXIT_SUCCESS);
 }
